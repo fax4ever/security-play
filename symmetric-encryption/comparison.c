@@ -4,10 +4,22 @@
 #include <openssl/aes.h>
 #include <openssl/rand.h>
 
-int main() {
-    // 16 * 8 => 128 bit each:
-    unsigned char key[16], iv[16]; 
+// 16 * 8 => 128 bit each:
+unsigned char key[16], iv[16]; 
 
+void print_data(const char *title, const void* data, int len) {
+    printf("%s : ", title);
+
+    const unsigned char * p = (const unsigned char *) data;
+    int i = 0;
+    for (; i<len; ++i) {
+        printf("%02X ", *p++);
+    }
+
+    printf("\n");
+}
+
+int main() {
     if (!RAND_bytes(key, sizeof key)) {
         printf("Error initializing the secret key");
         return -1;
@@ -17,9 +29,8 @@ int main() {
         return -1;
     }
 
-    printf("The key: '%s'\n", key);
-    printf("The IV: '%s'\n", iv);
+    print_data("The key", key, sizeof(key));
+    print_data("The IV ", iv, sizeof(iv));
 
     return 0;
-}    
-    
+}
