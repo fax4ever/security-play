@@ -53,3 +53,5 @@ dkms.conf
 
 */.vscode/*
 symmetric-encryption/comparison
+symmetric-encryption/1k-aes.dat
+symmetric-encryption/1k-aes-dec.txt
