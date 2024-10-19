@@ -5,7 +5,8 @@
 #include <openssl/rand.h>
 #include <sys/time.h>
 
-const int MAX_FILE_SIZE = 2000000;
+// we know that we're going to handle files at most of 4MB
+const int MAX_FILE_SIZE = 4000000;
 
 void print_data(const char* title, const void* data, int len) {
     printf("%s : ", title);
@@ -89,18 +90,20 @@ int aesCbc(void) {
         return -1;
     }
 
-    AES_KEY key;
+    AES_KEY encKey;
+    AES_KEY decKey;
 
     print_data("The key", userkey, sizeof userkey);
     print_data("The IV ", iv, sizeof iv);
-    AES_set_encrypt_key(userkey, 128, &key);
+    AES_set_encrypt_key(userkey, 128, &encKey);
+    AES_set_decrypt_key(userkey, 128, &decKey);
 
-    encryptAES("1k.txt", "1k-cbc.dat", key, iv);
-    decryptAES("1k-cbc.dat", "1k-cbc-dec.txt", key, iv);
-    encryptAES("10k.txt", "10k-cbc.dat", key, iv);
-    decryptAES("10k-cbc.dat", "10k-cbc-dec.txt", key, iv);
-    encryptAES("large-binary.MP4", "large-binary-cbc.dat", key, iv);
-    decryptAES("large-binary-cbc.dat", "large-binary-cbc-dec.MP4", key, iv);
+    encryptAES("1k.txt", "1k-cbc.dat", encKey, iv);
+    decryptAES("1k-cbc.dat", "1k-cbc-dec.txt", decKey, iv);
+    encryptAES("10k.txt", "10k-cbc.dat", encKey, iv);
+    decryptAES("10k-cbc.dat", "10k-cbc-dec.txt", decKey, iv);
+    encryptAES("large-binary.MP4", "large-binary-cbc.dat", encKey, iv);
+    decryptAES("large-binary-cbc.dat", "large-binary-cbc-dec.MP4", decKey, iv);
 
     return 0;
 }
