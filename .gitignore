@@ -76,3 +76,12 @@ symmetric-encryption/10k-cam.dat
 symmetric-encryption/10k-cam-dec.txt
 symmetric-encryption/large-binary-cam.dat
 symmetric-encryption/large-binary-cam-dec.MP4
+
+symmetric-encryption/aria-cbc
+symmetric-encryption/1k-ari.dat
+symmetric-encryption/1k-ari-dec.txt
+symmetric-encryption/10k-ari.dat
+symmetric-encryption/10k-ari-dec.txt
+symmetric-encryption/large-binary-ari.dat
+symmetric-encryption/large-binary-ari-dec.MP4
+

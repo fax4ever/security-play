@@ -16,6 +16,20 @@ gcc aes-cbc.c -o aes-cbc -I /home/fax/lib/openssl-3.3.2/include -L /home/fax/lib
 ./aes-cbc
 ```
 
+## ARIA CBC
+
+1. Compile and link
+
+``` bash
+gcc aria-cbc.c -o aria-cbc -I /home/fax/lib/openssl-3.3.2/include -L /home/fax/lib/openssl-3.3.2/lib64 -lcrypto
+```
+
+2. Run the program
+
+``` bash
+./aria-cbc
+```
+
 ## Camellia CBC
 
 1. Compile and link
