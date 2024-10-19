@@ -69,3 +69,10 @@ symmetric-encryption/10k-cbc-dec.txt
 symmetric-encryption/10k-cbc.dat
 symmetric-encryption/large-binary-cbc-dec.MP4
 symmetric-encryption/large-binary-cbc.dat
+symmetric-encryption/1k-cam-dec.txt
+symmetric-encryption/1k-cam.dat
+symmetric-encryption/10k-cam-dec.txt
+symmetric-encryption/10k-cam.dat
+symmetric-encryption/camellia-cbc
+symmetric-encryption/large-binary-cam-dec.MP4
+symmetric-encryption/large-binary-cam.dat
