@@ -55,3 +55,7 @@ dkms.conf
 symmetric-encryption/comparison
 symmetric-encryption/1k-aes.dat
 symmetric-encryption/1k-aes-dec.txt
+symmetric-encryption/10k-aes-dec.txt
+symmetric-encryption/10k-aes.dat
+symmetric-encryption/large-binary-dec.MP4
+symmetric-encryption/large-binary.dat
