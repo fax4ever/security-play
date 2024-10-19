@@ -81,7 +81,7 @@ void decryptAES(const char* in, const char* out, AES_KEY key, unsigned char* iv)
     fclose(ofp);
 }
 
-int main() {
+int aesCbf(void) {
     unsigned char userkey[16]; 
     unsigned char iv[16];
 
@@ -89,8 +89,8 @@ int main() {
     remove("1k-aes-dec.txt");
     remove("10k-aes.dat");
     remove("10k-aes-dec.txt");
-    remove("large-binary.dat");
-    remove("large-binary-dec.MP4");
+    remove("large-binary-aes.dat");
+    remove("large-binary-aes-dec.MP4");
 
     if (!RAND_bytes(userkey, sizeof userkey)) {
         printf("Error initializing the secret key");
@@ -111,8 +111,16 @@ int main() {
     decryptAES("1k-aes.dat", "1k-aes-dec.txt", key, iv);
     encryptAES("10k.txt", "10k-aes.dat", key, iv);
     decryptAES("10k-aes.dat", "10k-aes-dec.txt", key, iv);
-    encryptAES("large-binary.MP4", "large-binary.dat", key, iv);
-    decryptAES("large-binary.dat", "large-binary-dec.MP4", key, iv);
+    encryptAES("large-binary.MP4", "large-binary-aes.dat", key, iv);
+    decryptAES("large-binary-aes.dat", "large-binary-aes-dec.MP4", key, iv);
+
+    return 0;
+}
+
+int main() {
+    if (!aesCbf()) {
+        return -1;
+    }
 
     return 0;
 }

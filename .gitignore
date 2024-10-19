@@ -59,3 +59,13 @@ symmetric-encryption/10k-aes-dec.txt
 symmetric-encryption/10k-aes.dat
 symmetric-encryption/large-binary-dec.MP4
 symmetric-encryption/large-binary.dat
+symmetric-encryption/aes-cbf
+symmetric-encryption/large-binary-aes-dec.MP4
+symmetric-encryption/large-binary-aes.dat
+symmetric-encryption/aes-cbc
+symmetric-encryption/1k-cbc-dec.txt
+symmetric-encryption/1k-cbc.dat
+symmetric-encryption/10k-cbc-dec.txt
+symmetric-encryption/10k-cbc.dat
+symmetric-encryption/large-binary-cbc-dec.MP4
+symmetric-encryption/large-binary-cbc.dat

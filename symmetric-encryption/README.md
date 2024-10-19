@@ -2,19 +2,29 @@ To compile the program you need to link the OpenSSL libraries.
 
 Assuming you have installed OpenSSL in the directory `/home/fax/lib/open/`.
 
-## AES CBF 128
-
-1. Compile and link
+## AES CBC
 
 ``` bash
-gcc comparison.c -o comparison -I /home/fax/lib/open/include -L /home/fax/lib/open/lib64 -lcrypto -Wall -Wextra -g
+gcc aes-cbc.c -o aes-cbc -I /home/fax/lib/open/include -L /home/fax/lib/open/lib64 -lcrypto
 ```
 
 2. Run the program
 
 ``` bash
-./comparison
+./aes-cbc
 ```
 
-## AES CBC
+## AES CBF 128
+
+1. Compile and link
+
+``` bash
+gcc aes-cbf.c -o aes-cbf -I /home/fax/lib/open/include -L /home/fax/lib/open/lib64 -lcrypto
+```
+
+2. Run the program
+
+``` bash
+./aes-cbf
+```
 
