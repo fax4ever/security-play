@@ -85,3 +85,8 @@ symmetric-encryption/10k-ari-dec.txt
 symmetric-encryption/large-binary-ari.dat
 symmetric-encryption/large-binary-ari-dec.MP4
 
+*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
