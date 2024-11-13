@@ -90,3 +90,9 @@ symmetric-encryption/large-binary-ari-dec.MP4
 *.fdb_latexmk
 *.fls
 *.log
+
+docs/h1.pdf.age
+docs/h1-decripted.pdf
+docs/h2-decripted.pdf
+docs/h2.pdf.age
+docs/key.txt

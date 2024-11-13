@@ -1,0 +1,168 @@
+\documentclass{article}
+\title{Guidelines for the use of AGE}
+\author{Fabio Massimo Ercoli
+	\footnote{
+		More on me:
+		https://github.com/fax4ever
+		https://www.linkedin.com/in/fabioercoli/
+}}
+\date{November 15\textsuperscript{st} 2024}
+\usepackage{listings}
+
+\begin{document}
+	
+	\maketitle
+	\thispagestyle{empty}
+	
+	\section{Introduction}
+	
+	We're going to present a brief guide for using \emph{AGE file encryption project}\footnote{https://github.com/FiloSottile/age?tab=readme-ov-file}.
+	
+	It is an easy to use library to encrypt/decrypt binary files using both symmetric and asymmetric keys algorithms. 
+	It is written in \emph{Go} programming language, which is a popular language for programming on the cloud. 
+	
+	If you want to use the library, you can:
+	
+	\begin{itemize}
+		\item Import the library into you source code project (a native support is offered for Go and Rust).
+		\item Install it into operating systems, so that the API could be invoked from the operating system shell.
+	\end{itemize}
+	
+	In this guide we will follow the later option.
+	
+	\subsection{Installation}
+	
+	As a first step we need to install Age in our local operating systems environment.
+	
+	\medskip
+	
+	\noindent For instance in Fedora or Red Hat Linux you can simply run the command:
+	\begin{lstlisting}[language=bash]
+	$ sudo dnf install age
+	\end{lstlisting}
+	
+	\noindent For other operating system see the installation page \footnote{https://github.com/FiloSottile/age?tab=readme-ov-file\#installation}.
+	
+	\medskip
+	
+	\noindent To verify the correct installation type the following commands:
+	\begin{lstlisting}[language=bash]
+	$ age --help
+	\end{lstlisting}
+	
+	and
+	
+	\begin{lstlisting}[language=bash]
+	$ age-keygen --help
+	\end{lstlisting}
+	
+	\emph{age} and \emph{age-keygen} are the API commands that can be invoked from the command line.
+	The output provides the syntax for using those commands.
+	
+	\subsection{Features}
+	
+	Age does not limit in any way the types of file supported for the encryption / decryption.
+	Thus we can assume that they are seen as binary files.
+	
+	It only supports encryption / decryption, not signatures.
+	
+	Compared with other tools (for instance OpenSSL) it looks easier to use,
+	limiting for instance the possible algorithms to apply, but as we will see in the following sections,
+	the algorithms are considered very secure at the moment.
+	
+	I want also to mention that the library offers the capability to be extended by plugings.
+	This is in nice since it provides more flexibility, but
+	in general it is better to be sure about the security offered in particular by third party plugins before to use them.
+	
+	\section{Encryption and decryption}
+	
+	\subsection{Passphrase encryption}
+	
+	Files can be encrypted and decrypted using the same (symmetric)  passphrase.
+	This is usually longer than a password, since it should contain more words, and this increases the size
+	of the space of all the possible keys.
+	I would say it is better than a common password, but, in my opinion, still not secure as a long binary key.
+	Age by default auto generates the passphrase to use for the encryption, I would suggest to use this approach.
+	
+	\medskip
+	
+	\noindent Use the option \textbf{-p} to use this strategy to encrypt a file:
+	\begin{lstlisting}[language=bash]
+	$ age -p h1.pdf > h1.pdf.age
+	\end{lstlisting}
+	
+	\noindent To decrypt option \textbf{-d} is always used
+	\begin{lstlisting}[language=bash]
+	$ age -d h1.pdf.age > h1-decripted.pdf
+	\end{lstlisting}
+	
+	\subsection{Public key encryption}
+	
+	\noindent In the library language:
+	\begin{itemize}
+		\item  a \textbf{recipient} is a public key (or more in general a public value).
+		\item  an \textbf{identity} is a private key (or more in general a private value).
+	\end{itemize}
+	
+	The former is used to encrypt, the latter is used to decrypt.
+	
+	\noindent For public key encryption you can specify one or more recipient using the options:
+	\begin{itemize}
+		\item \textbf{-r} Providing directly the value of the recipient (more -r can be used in the same encryption)
+		\item \textbf{-R} Providing the path to the file containing the recipient(s).
+	\end{itemize}
+	
+	\noindent For private key decryption you can specify one or more identities using the options:
+	\begin{itemize}
+		\item \textbf{-i} Providing directly the value of the identity (more -i can be used in the same encryption)
+		\item \textbf{-I} Providing the path to the file containing the identity(s).
+	\end{itemize}
+	
+	\noindent You can use two kind of key pairs:
+	\begin{itemize}
+		\item \textbf{Native X25519 keys}, using elliptic curve Diffie-Hellman key exchange. 
+		The elliptic curve techniques in general allow to keep high the security with keys having a relatively small size. 
+		\item \textbf{SSH keys} generated with other tools.
+	\end{itemize}	
+	
+	\noindent You can use directly the library to generate Native X25519 keys, for instance running the command:
+	\begin{lstlisting}[language=bash]
+	$ age-keygen -o key.txt
+	\end{lstlisting}
+	
+	\noindent Opening the \emph{key.txt} file, you should find a content similar to the following:
+	\begin{small}
+	\begin{verbatim}
+		# created: 2024-11-14T11:58:08+01:00
+		# public key: age1x864sfs5pfka87tgpaqn0j0lc89ep3cw35sr69et9dz2ncwf6uaskmzv8w
+		AGE-SECRET-KEY-14KG6Z6VR72EA2YG6J56Q9LS5WV6Z825SJ4VZUV5JWTL4VM9HJK4SZAFYG2
+	\end{verbatim}
+	\end{small}
+	
+	\noindent Here is an example of encryption:
+	\begin{small}
+	\begin{lstlisting}[language=bash]
+	$ age -r age1x864sfs5pfk... h2.pdf > h2.pdf.age
+	\end{lstlisting}
+	\end{small}
+	
+	\noindent Here is an example of decryption:
+	\begin{small}
+	\begin{lstlisting}[language=bash]
+	$ age -d -o h1-decripted.pdf -i key.txt h2.pdf.age
+	\end{lstlisting}
+	\end{small}
+	
+	\section{Algorithms}
+	
+	We already mentioned that native keys generated by AGE are generated according to the standard \emph{X25519}.
+	
+	For symmetric encription an \emph{AEAD} (authenticated encryption with associated data) solution is used,
+	in particular AGE uses \emph{ChaCha20} stream cipher that
+	is used tougher with the \emph{Poly1305} authenticator.
+	This solution is usually faster than the more classical  \emph{AES-GCM AEAD}.
+	
+	Keys are generated from passphrases using \emph{scrypt}, that is a password-based key derivation function algorithm.
+	In all the other cases \emph{HKDF-SHA-256}, a key derivation algorithm, is used to derive the keys.
+	
+\end{document}	
