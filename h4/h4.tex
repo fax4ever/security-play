@@ -1,0 +1,156 @@
+\documentclass{article}
+\title{Digital Signatures and p7m files}
+\author{Fabio Massimo Ercoli
+	\footnote{
+		More on me:
+		https://github.com/fax4ever
+		https://www.linkedin.com/in/fabioercoli/.
+}}
+\date{November 15\textsuperscript{st} 2024}
+\usepackage{listings}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\section{Introduction}
+
+We start from a given file named \emph{Log 2024 CS - 2024 syllabus.pdf.p7m}
+\footnote{The original file `Log 2024 CS - 2024 syllabus.pdf.p7m'
+can be found on the delivery directory together with the homework 
+PDF and LaTeX source file.}
+having the extension \emph{p7m}.
+
+The extension \emph{p7m} is usually used to denote files that envelop a signed file, 
+a signature or a series of signatures and a certificate or a list of the certificates 
+related to the signatures.
+
+In general, different signing techniques are used to sign and verify
+the signatures. For instance PAdES is used for human-signed PDF files,
+or CAdES for generic binary human-signed files, XAdES for software-signed
+XML files and JAdES for software-signed JSON files.
+
+For some options, like CAdES for instance, when more signatures are applied,
+it is possibile to decide to sign the signed document signed by the last 
+signature, doing what is called parallel signature, or to sign the entire 
+envelope, that is a matrioska signature.
+For other options like PAdES only parallel signatures are available,
+and this may simplify a lot the extraction of the original document.
+
+\section{Extract the orginal document}
+
+For extracting the original signed file I searched for a non invasive solution,
+so I followed the idea of trying some online tool.
+
+After a series of attempts I found the website for a commercial tool
+\footnote{https://www.coolutils.com/online/P7M-to-PDF}
+offering the possibility to extract the original file 
+from a p7m envelope file as a preview.
+
+The result is the file named \emph{Log 2024 CS - 2024 syllabus.pdf.pdf}
+that I attached it to the delivery directory.
+
+The file is an openable fully working PDF containing what is claimed by the file name.
+So I think it worked.
+Later we will see how to do it with OpenSSL.
+
+\section{Show the certicate}
+
+Using my operating system Fedora Linux, 
+If I try to open the p7m file directly with the file navigator by
+clicking to \emph{detail}, I got the information I put in the
+plaintext file \emph{cert-sign-non-repudiation.txt}.
+I attached it to the delivery directory as well.
+Later we will see a better way to extract these information.
+
+Let's try to see what the file contains.
+
+Opening it, it looks like a X.509 certificate, in particular a version 3 one.
+In there we can found all the fields we expect to find,
+according to the standard:
+
+\begin{itemize}
+	\item \textbf{Version}: as we said it is a 3 version certificate.
+	\item \textbf{Serial Number}: \emph{22 F7 2A}, that is unique in the context of the same issuer (CA).
+	\item \textbf{Signature}: this is the last field, since it signs all the precedent fields.
+	It also contains the algorithm used \emph{1.2.840.113549.1.1.11} and the parameter passed to it \emph{05 00}.
+	\item \textbf{Issuer Name}: the X.500 name of the issuing CA, Telecom Italia Trust Technologies S.r.l.
+	\item \textbf{Validity}: consisting in two fields, \emph{Not Valid Before} having value \emph{2023-04-03} and 
+	\emph{Not Valid After} having value \emph{2026-04-03}. 
+	\item \textbf{Subject Name}: the X.500 name of the entity whose key is being certified.
+	\item \textbf{Public Key Info}: that is the public key certified by the certificate.
+	\item \textbf{Key Usage}: this parameter describes the goal of the use of the public key, in this case \textbf{no repudiation}.
+	\item \textbf{Extension}: there are several extention fields, they look like references to other certificates,
+	possibly enabling a verification chain up to a root (self-signed) CA, but I'm not sure about that.
+\end{itemize}
+
+The values of some fields, for instance the serial number and the parameter, used in the signed signature, 
+are expressed as a sequence of 2 exadecimal values, so each element of the sequence is a 32-bit value.
+This representation allows to express a binary value in a text portable format.
+
+\section{Working with OpenSSL}
+
+\subsection{Extract the certificate}
+
+First of all, I renamed \emph{Log 2024 CS - 2024 syllabus.pdf.p7m} file using a simple name like \emph{smime.p7m}.
+This step is of course not necessary but it will make the next OpenSSL command easier to read.
+
+\noindent Now we try to extract the signer certicate using the command:
+\begin{lstlisting}[language=bash]
+  $ openssl pkcs7 -in smime.p7m -inform DER \
+    -print_certs -text > senders-cert.pem
+\end{lstlisting}
+
+Opening the produced file \emph{senders-cert.pem} with the operating system,
+we will have the same result reported in the previous chapter.
+But now we have extracted the certificate from the original file.
+
+Moreover, if now we open the file with a text editor, all the contents are clear.
+For instance, I realized that the assumption I made on the extension was wrong.
+The extensions are very clear now, thanks to the \emph{-text} option of OpenSSL,
+for instance we can read the certificate policies and the key usage,
+that is for non repudiation tougher with other information.
+
+The extension also contains the url 
+\emph{http://ca.tipki.it/TTQTSPCA1/CERT}.
+Opening the url a self signed certicate can be downloaded.
+It is self signed because the \emph{Subject Name} and \emph{Issuer Name} are the same.
+
+\subsection{Get the original plaintext, verifying the signature}
+
+\noindent It is possible to extract the original signed document using the command:
+\begin{lstlisting}[language=bash]
+  $ openssl smime -verify -inform DER -in smime.p7m \
+    -noverify -signer senders-cert.pem -out bla.pdf	
+\end{lstlisting}
+
+\noindent The output is: 
+\begin{verbatim}
+Verification successful
+\end{verbatim}
+
+The produced file \emph{bla.pdf} is the original plain text.
+The pdf is readable and it is identical to the one we extracted using the web tool
+in a previous section.
+
+Notice that we used the \emph{-inform DER} option to allow OpenSSL to work with DER files,
+that is not the default of OpenSSL.
+
+The option \emph{-verify} means that the signature has been verified using the public key
+provided by the certificate. But with the option \emph{-noverify} we didn't verify signers certificate.
+
+\noindent If we remove \emph{-noverify} option we get the error:
+\begin{tiny}
+\begin{verbatim}
+	Verification failure
+	8052A76B6A7F0000:error:10800075:PKCS7 routines:PKCS7_verify:certificate verify error:
+	crypto/pkcs7/pk7_smime.c:296:Verify error: unable to get local issuer certificate
+\end{verbatim}
+\end{tiny}
+
+According to the message it seems that it is not possible to verify the issuer of the certificate,
+in this case \emph{Telecom Italia Trust Technologies S.r.l.}.
+I'm not sure that the p7m file contains all the certificate chains.
+I tried to extract more certificates from it, but I failed.
+
+\end{document}
