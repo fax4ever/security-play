@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
 
+import org.apache.commons.codec.binary.Hex;
 import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
 import org.bouncycastle.crypto.Digest;
 import org.bouncycastle.crypto.KeyGenerationParameters;
@@ -12,8 +13,8 @@ import org.bouncycastle.crypto.generators.DHBasicKeyPairGenerator;
 import org.bouncycastle.crypto.generators.PKCS5S2ParametersGenerator;
 import org.bouncycastle.crypto.params.DHKeyGenerationParameters;
 import org.bouncycastle.crypto.params.DHParameters;
+import org.bouncycastle.crypto.params.DHPrivateKeyParameters;
 import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.util.DigestFactory;
 
 public class PDM {
 
@@ -34,6 +35,15 @@ public class PDM {
    // certainty
    private final int certainty;
 
+   // OUTPUT:
+   private byte[] w;
+   private BigInteger initialQ;
+   private BigInteger q;
+   private BigInteger p;
+   private DHPrivateKeyParameters a;
+   private DHPrivateKeyParameters b;
+   private BigInteger sessionKeyPart1;
+
    public PDM(String username, String password, Digest digestW, Digest digestQ, int sizeW, int sizeQ, int certainty) {
       this.username = username;
       this.password = password;
@@ -44,21 +54,77 @@ public class PDM {
       this.certainty = certainty;
    }
 
+   public String username() {
+      return username;
+   }
+
+   public String password() {
+      return password;
+   }
+
+   public String digestW() {
+      return digestW.getAlgorithmName();
+   }
+
+   public Integer sizeW() {
+      return sizeW;
+   }
+
+   public String digestQ() {
+      return digestQ.getAlgorithmName();
+   }
+
+   public Integer sizeQ() {
+      return sizeQ;
+   }
+
+   public Integer certainty() {
+      return certainty;
+   }
+
+   public String w() {
+      return Hex.encodeHexString(w);
+   }
+
+   public String initialQ() {
+      return initialQ.toString(16);
+   }
+
+   public String q() {
+      return q.toString(16);
+   }
+
+   public String p() {
+      return p.toString(16);
+   }
+
+   public String a() {
+      return a.getX().toString(16);
+   }
+
+   public String b() {
+      return b.getX().toString(16);
+   }
+
+   public String sessionKeyPart1() {
+      return sessionKeyPart1.toString(16);
+   }
+
    public Object calculateSessionKey() {
       PKCS5S2ParametersGenerator kdf = new PKCS5S2ParametersGenerator(digestW);
       kdf.init(password.getBytes(StandardCharsets.UTF_8), username.getBytes(StandardCharsets.UTF_8), PASSWORD_DERIVATION_ITERATIONS);
-      byte[] w = ((KeyParameter) kdf.generateDerivedMacParameters(sizeW)).getKey();
+      w = ((KeyParameter) kdf.generateDerivedMacParameters(sizeW)).getKey();
 
       PKCS5S2ParametersGenerator kdf2 = new PKCS5S2ParametersGenerator(digestQ);
       kdf2.init(password.getBytes(StandardCharsets.UTF_8), username.getBytes(StandardCharsets.UTF_8), PASSWORD_DERIVATION_ITERATIONS);
       byte[] qByte = ((KeyParameter) kdf2.generateDerivedMacParameters(sizeQ)).getKey();
-      BigInteger initialQ = new BigInteger(1, qByte);
+      initialQ = new BigInteger(1, qByte);
       // inspired by DHParametersHelper#generateSafePrime
       // but different since here we want a deterministic result based on q
       BigInteger[] safePrimes = generateSafePrime(initialQ, certainty);
 
-      BigInteger p = safePrimes[0];
-      BigInteger q = safePrimes[1];
+      p = safePrimes[0];
+      q = safePrimes[1];
       DHParameters parameters = new DHParameters(p, BigInteger.TWO, q);
 
       KeyGenerationParameters kgp = new DHKeyGenerationParameters(new SecureRandom(), parameters);
@@ -67,11 +133,13 @@ public class PDM {
 
       AsymmetricCipherKeyPair aliceKeyPair = keyGen.generateKeyPair();
       DHBasicAgreement aliceKeyAgree = new DHBasicAgreement();
-      aliceKeyAgree.init(aliceKeyPair.getPrivate());
+      a = (DHPrivateKeyParameters) aliceKeyPair.getPrivate();
+      aliceKeyAgree.init(a);
 
       AsymmetricCipherKeyPair bobKeyPair = keyGen.generateKeyPair();
       DHBasicAgreement bobKeyAgree = new DHBasicAgreement();
-      bobKeyAgree.init(bobKeyPair.getPrivate());
+      b = (DHPrivateKeyParameters) bobKeyPair.getPrivate();
+      bobKeyAgree.init(b);
 
       BigInteger aliceAgree = aliceKeyAgree.calculateAgreement(bobKeyPair.getPublic());
       BigInteger bobAgree = bobKeyAgree.calculateAgreement(aliceKeyPair.getPublic());
@@ -80,7 +148,8 @@ public class PDM {
       {
          throw new RuntimeException("Keys do not match.");
       }
-      return aliceAgree;
+      sessionKeyPart1 = bobAgree;
+      return sessionKeyPart1;
    }
 
    public static BigInteger[] generateSafePrime(BigInteger initialQValue, int certainty) {
