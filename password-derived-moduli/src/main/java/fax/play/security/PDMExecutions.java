@@ -25,13 +25,14 @@ public class PDMExecutions {
       try (
             BufferedWriter writer = Files.newBufferedWriter(Paths.get(CSV_FILE_PATH));
             CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
-                  .withHeader("username", "password", "digestW", "sizeW", "digestQ", "sizeQ", "certainty",
-                        "W", "initialQ", "q", "p", "a", "b", "session key (1/2)"))
+                  .withHeader("username", "password", "digestW", "sizeW",
+                        "digestQ", "sizeQ", "W", "initialQ",
+                        "q", "p", "a", "b", "session key (1/2)", "session key (2/2)"))
       ) {
          for (PDM execution : executions) {
             csvPrinter.printRecord(execution.username(), execution.password(), execution.digestW(), execution.sizeW(),
-                  execution.digestQ(), execution.sizeQ(), execution.certainty(), execution.w(), execution.initialQ(),
-                  execution.q(), execution.p(), execution.a(), execution.b(), execution.sessionKeyPart1());
+                  execution.digestQ(), execution.sizeQ(), execution.w(), execution.initialQ(),
+                  execution.q(), execution.p(), execution.a(), execution.b(), execution.sessionKeyPart1(), execution.sessionKeyPart2());
          }
          csvPrinter.flush();
       }
