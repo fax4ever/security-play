@@ -1,0 +1,198 @@
+\documentclass{article}
+\title{PDM with augmentation}
+\author{Fabio Massimo Ercoli
+	\footnote{
+		More on me:
+		https://github.com/fax4ever
+		https://www.linkedin.com/in/fabioercoli/.
+}}
+\date{December 7\textsuperscript{th} 2024}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+	
+\section{Basic concepts}
+
+\subsection{EKE}
+
+EXE (Encrypted Key Exchange) is used to implement mutual authentication
+between two parties, usually a client and a server.
+The process requires a shared weak secret key (\emph{W}) that is derived from the user password.
+This weak key can be computed by the client when the user inserts the password,
+so we don't need to store anything on the client machine.
+While on the server side we need to store the value of \emph{W} in persistent storage.
+
+The weak key is used to encrypt a Diffie-Hellman key exchange
+that is used to produce a stronger password.
+The stronger password is used at the end of the procedure to 
+mutually authenticate the client and the server,
+using challenges. The authentication based on the strong key so is more robust
+than the one based on \emph{W}.
+
+\subsection{PDM}
+
+PDM (Password Derived Moduli) is a variant of the EKE, 
+in particular it is a simplification where the value \emph{p},
+that is the number we use for the \emph{mod} operation
+of the Diffie-Hellman key exchange,
+is no longer a fixed number but it is a number that depends on the password.
+This allow to choose a fixed value for the generation number \emph{g},
+in case of PDM this value is equals to \emph{2}.
+
+The benefit of this variant is that the two parties 
+only need to share their encrypted public keys values:
+$W\{2^a mod \; p\}$ and $W\{2^a mod \; p\}$,
+since \emph{g} is always 2 and \emph{p} is derived from the password.
+Again \emph{W} is stored on the server machine and derived from
+the password on the client machine.
+
+\subsection{PDM with augmentation}
+
+Sniffing the messages exchanged during the  \emph{PDM} (or \emph{EKE}) procedure 
+does not allow to find \emph{W} using an offline dictionary attack,
+since the weak key is used only to encrypt the Diffie-Hellman key exchange.
+But if the server is compromised, the offline dictionary attack  
+will be applicable to the weak keys stored in the secondary storage of the server and
+if the attacker knows \emph{W} will be able to impersonate the user.
+
+So we need to find a way to solve this potential vulnerability to make the authentication even stronger.
+The idea of  \emph{PDM with augmentation} or in general of \emph{EKE with augmentation} is to store a value on
+the server machine that cannot be used to obtain the weak key \emph{W}.
+
+In \emph{PDM with augmentation}, as usual we don't need to
+store anything client side, since the values \emph{W} and \emph{p}
+can be directly derived from the user's password.
+ 
+\noindent On the server side, for each registered user, we store the triple:
+ \begin{itemize}
+ 	\item The username of the user, for instance \emph{Alice}
+ 	\item The \emph{mod} operation \emph{p}
+ 	\item $2^W mod  \; p$
+ \end{itemize}
+
+If the value $2^W mod  \; p$ is computerized, this can be used only to impersonate
+the server and not the user. Because to impersonate the user we need to solve
+the discrete logarithm problem in order to get back to \emph{W}.
+
+\noindent The procedure is performed using just 3 message exchanges:
+ \begin{enumerate}
+	\item \textbf{A $\rightarrow$ B}: $2^a mod  \; p$
+	\item \textbf{B $\rightarrow$ A}: $2^b mod  \; p$, \emph{hash1(sessionKey)}
+	\item \textbf{A $\rightarrow$ B}: \emph{hash2(sessionKey)}
+\end{enumerate}
+
+\noindent Where:
+ \begin{itemize}
+	\item \emph{a} is the private value chosen by A
+	\item \emph{b} is the private value chosen by B
+	\item \emph{hash1} and \emph{hash1} are two different cryptographic hashing functions
+\end{itemize}
+
+\noindent And:
+
+\begin{equation}
+	sessionKey = 2^{a \cdot b} mod \;  p \; , 2^{b \cdot W} mod \;  p \;
+\end{equation}
+
+The client is able to reconstruct the session key, since it knows \emph{a}, $2^b mod  \; p$ and \emph{W}.
+The server is able to reconstruct the session key, since it knows \emph{b}, $2^a mod  \; p$ and $2^W mod  \; p$. 
+
+\section{Implementation}
+
+\subsection{Calculate the values of the session keys}
+
+\paragraph{\emph{p} module value}
+
+The first parameter we need to build is \emph{p}.
+In general \emph{p} should be a safe prime, so a prime and also $(p-1)/2$ has to be prime.
+This is sometimes not considered a strong requirement, since also if \emph{p}
+is not a safe prime or even if not prime at all could be considered enough secure choice for \emph{p}.
+
+We want to generate this value from the user password, possibly salting it with the user name,
+so that if two users use the same password the value of \emph{p} is expected to be different.
+Furthermore, we want to have \emph{p} large enough to be considered safe against the discrete
+log computation.
+
+One idea to compute \emph{p} is to start from the password, salting it with the username, compute
+the \emph{hash(password $\vert$ username)}, starting from this value we have three options I think:
+
+ \begin{itemize}
+	\item Use an odd number close to the value returned from the hash. In this case the value will be a co-prime of the generator 2.
+	\item Find a prime number close to the returned result of the hash.
+	\item Find a safe prime number close to the returned result of the hash.
+\end{itemize}
+
+\paragraph{\emph{a} \emph{b} private chosen values}
+
+Those values can be chosen between \emph{1} and \emph{p-1} using a CSPRGN
+(cryptographically secure pseudorandom number generators).
+
+\paragraph{\emph{W} derived from the password}
+
+This value can be produced using a cryptographic hashing functions
+taking the password as input and returning a value between \emph{1} and \emph{p-1}.
+
+\subsection{Source code of the solution}
+
+I implemented a solution based on Bouncy Castle\footnote{https://www.bouncycastle.org/} the source code
+can be found here:\href{https://github.com/fax4ever/security-play/tree/main/password-derived-moduli}{Password Derived Moduli project}.
+
+The source code is also attached as a zip file named \emph{password-derived-moduli.zip}.
+
+The core of the solution is the class \emph{PDM.java}, the input of the process are:
+the username (used as salt), the password (used to generate p and W using different hashing functions), and also the size of \emph{W} and \emph{q}.
+
+What is \emph{q}? It is a value I'm using in my implementation to generate \emph{p} as safe prime from the password.
+In particular:
+
+\begin{equation}
+p = (q \cdot 2) + 1
+\end{equation}
+
+In my solution I'm using a \emph{PKCS5S2} parameter generator and different cartographic hash functions
+to derive \emph{W} and the initial value of \emph{q} from the password.
+Then I use the \emph{BigDecimal} $nextProbablePrime$ to compute \emph{q} and finally \emph{p}.
+
+In the rest of the code I compute (using the Bouncy Castle Diffie Hellman utilities)  the two values:
+
+\begin{equation}
+	2^{a \cdot b} mod \;  p \; , 2^{b \cdot W} mod \;  p \;
+\end{equation}
+
+In particular \emph{a} and \emph{b} are chosen uniformly at random in the range [1 - p-1].
+
+\section{Conclusions}
+
+\subsection{Analyze the results}
+
+The results are reported in the spreadsheet (file \emph{PDM with augmentation.xlsx}).
+Open the file we can notice that given a password and a username, keeping the same size and digest algorithm to apply
+the values of \emph{W}, \emph{initialQ}, \emph{q} and \emph{p} does not change in different executions.
+
+The same is not true for the values \emph{a} and \emph{b} that are chosen differently at any execution.
+
+I tried to use different key sizes.
+
+Also, I tried to apply different hashing functions to derive \emph{W} and \emph{p}. As expected,
+even if we use the same password, username and sizes, we get different results.
+
+Finally, as expected, changing (even slightly)  the password or the username produces
+results totally different.
+
+\subsection{What happens if the server is compromised?}
+
+The augmentation, as we said, it is a way to avoid to make more difficult obtain a user password
+or the value of \emph{W} starting from the values that are stored on the server.
+
+In the case of \emph{PDM with augmentation}, storing $2^W mod  \; p$ does not allow to
+get back to \emph{W}, since the discrete log problem is considered to be hard.
+
+The server also needs to store \emph{p} that is derived from the password.
+Since this value is not a direct result of an hashing function, but different steps are
+taken in order to compute p, such as derive q and make it prime, maybe we can
+say we're safe. 
+
+\end{document}	
