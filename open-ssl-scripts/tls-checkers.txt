@@ -1,0 +1,1767 @@
+OpenSSL 3.2.2 4 Jun 2024 (Library: OpenSSL 3.2.2 4 Jun 2024)
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=*.google.com
+   i:C=US, O=Google Trust Services, CN=WR2
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Dec  2 08:35:57 2024 GMT; NotAfter: Feb 24 08:35:56 2025 GMT
+ 1 s:C=US, O=Google Trust Services, CN=WR2
+   i:C=US, O=Google Trust Services LLC, CN=GTS Root R1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+ 2 s:C=US, O=Google Trust Services LLC, CN=GTS Root R1
+   i:C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Jun 19 00:00:42 2020 GMT; NotAfter: Jan 28 00:00:42 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIOCjCCDPKgAwIBAgIRAPwSW71bNuprEjsKVUmITJ8wDQYJKoZIhvcNAQELBQAw
+OzELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEM
+MAoGA1UEAxMDV1IyMB4XDTI0MTIwMjA4MzU1N1oXDTI1MDIyNDA4MzU1NlowFzEV
+MBMGA1UEAwwMKi5nb29nbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE
+71sTilrX1l3WfP8f0rEM1E03LbzIiI/dUnFE+5hZtIjgySa+zRBfvcjCyxjKVY8f
+ve8Qyy0b/LzN/F0tr8FlgqOCC/YwggvyMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUE
+DDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRycZDqXxIWSs+1
+Mkh35qRya1dOOzAfBgNVHSMEGDAWgBTeGx7teRXUPjckwyG77DQ5bUKyMDBYBggr
+BgEFBQcBAQRMMEowIQYIKwYBBQUHMAGGFWh0dHA6Ly9vLnBraS5nb29nL3dyMjAl
+BggrBgEFBQcwAoYZaHR0cDovL2kucGtpLmdvb2cvd3IyLmNydDCCCc0GA1UdEQSC
+CcQwggnAggwqLmdvb2dsZS5jb22CFiouYXBwZW5naW5lLmdvb2dsZS5jb22CCSou
+YmRuLmRldoIVKi5vcmlnaW4tdGVzdC5iZG4uZGV2ghIqLmNsb3VkLmdvb2dsZS5j
+b22CGCouY3Jvd2Rzb3VyY2UuZ29vZ2xlLmNvbYIYKi5kYXRhY29tcHV0ZS5nb29n
+bGUuY29tggsqLmdvb2dsZS5jYYILKi5nb29nbGUuY2yCDiouZ29vZ2xlLmNvLmlu
+gg4qLmdvb2dsZS5jby5qcIIOKi5nb29nbGUuY28udWuCDyouZ29vZ2xlLmNvbS5h
+coIPKi5nb29nbGUuY29tLmF1gg8qLmdvb2dsZS5jb20uYnKCDyouZ29vZ2xlLmNv
+bS5jb4IPKi5nb29nbGUuY29tLm14gg8qLmdvb2dsZS5jb20udHKCDyouZ29vZ2xl
+LmNvbS52boILKi5nb29nbGUuZGWCCyouZ29vZ2xlLmVzggsqLmdvb2dsZS5mcoIL
+Ki5nb29nbGUuaHWCCyouZ29vZ2xlLml0ggsqLmdvb2dsZS5ubIILKi5nb29nbGUu
+cGyCCyouZ29vZ2xlLnB0gg8qLmdvb2dsZWFwaXMuY26CESouZ29vZ2xldmlkZW8u
+Y29tggwqLmdzdGF0aWMuY26CECouZ3N0YXRpYy1jbi5jb22CD2dvb2dsZWNuYXBw
+cy5jboIRKi5nb29nbGVjbmFwcHMuY26CEWdvb2dsZWFwcHMtY24uY29tghMqLmdv
+b2dsZWFwcHMtY24uY29tggxna2VjbmFwcHMuY26CDiouZ2tlY25hcHBzLmNughJn
+b29nbGVkb3dubG9hZHMuY26CFCouZ29vZ2xlZG93bmxvYWRzLmNughByZWNhcHRj
+aGEubmV0LmNughIqLnJlY2FwdGNoYS5uZXQuY26CEHJlY2FwdGNoYS1jbi5uZXSC
+EioucmVjYXB0Y2hhLWNuLm5ldIILd2lkZXZpbmUuY26CDSoud2lkZXZpbmUuY26C
+EWFtcHByb2plY3Qub3JnLmNughMqLmFtcHByb2plY3Qub3JnLmNughFhbXBwcm9q
+ZWN0Lm5ldC5jboITKi5hbXBwcm9qZWN0Lm5ldC5jboIXZ29vZ2xlLWFuYWx5dGlj
+cy1jbi5jb22CGSouZ29vZ2xlLWFuYWx5dGljcy1jbi5jb22CF2dvb2dsZWFkc2Vy
+dmljZXMtY24uY29tghkqLmdvb2dsZWFkc2VydmljZXMtY24uY29tghFnb29nbGV2
+YWRzLWNuLmNvbYITKi5nb29nbGV2YWRzLWNuLmNvbYIRZ29vZ2xlYXBpcy1jbi5j
+b22CEyouZ29vZ2xlYXBpcy1jbi5jb22CFWdvb2dsZW9wdGltaXplLWNuLmNvbYIX
+Ki5nb29nbGVvcHRpbWl6ZS1jbi5jb22CEmRvdWJsZWNsaWNrLWNuLm5ldIIUKi5k
+b3VibGVjbGljay1jbi5uZXSCGCouZmxzLmRvdWJsZWNsaWNrLWNuLm5ldIIWKi5n
+LmRvdWJsZWNsaWNrLWNuLm5ldIIOZG91YmxlY2xpY2suY26CECouZG91YmxlY2xp
+Y2suY26CFCouZmxzLmRvdWJsZWNsaWNrLmNughIqLmcuZG91YmxlY2xpY2suY26C
+EWRhcnRzZWFyY2gtY24ubmV0ghMqLmRhcnRzZWFyY2gtY24ubmV0gh1nb29nbGV0
+cmF2ZWxhZHNlcnZpY2VzLWNuLmNvbYIfKi5nb29nbGV0cmF2ZWxhZHNlcnZpY2Vz
+LWNuLmNvbYIYZ29vZ2xldGFnc2VydmljZXMtY24uY29tghoqLmdvb2dsZXRhZ3Nl
+cnZpY2VzLWNuLmNvbYIXZ29vZ2xldGFnbWFuYWdlci1jbi5jb22CGSouZ29vZ2xl
+dGFnbWFuYWdlci1jbi5jb22CGGdvb2dsZXN5bmRpY2F0aW9uLWNuLmNvbYIaKi5n
+b29nbGVzeW5kaWNhdGlvbi1jbi5jb22CJCouc2FmZWZyYW1lLmdvb2dsZXN5bmRp
+Y2F0aW9uLWNuLmNvbYIWYXBwLW1lYXN1cmVtZW50LWNuLmNvbYIYKi5hcHAtbWVh
+c3VyZW1lbnQtY24uY29tggtndnQxLWNuLmNvbYINKi5ndnQxLWNuLmNvbYILZ3Z0
+Mi1jbi5jb22CDSouZ3Z0Mi1jbi5jb22CCzJtZG4tY24ubmV0gg0qLjJtZG4tY24u
+bmV0ghRnb29nbGVmbGlnaHRzLWNuLm5ldIIWKi5nb29nbGVmbGlnaHRzLWNuLm5l
+dIIMYWRtb2ItY24uY29tgg4qLmFkbW9iLWNuLmNvbYIUZ29vZ2xlc2FuZGJveC1j
+bi5jb22CFiouZ29vZ2xlc2FuZGJveC1jbi5jb22CHiouc2FmZW51cC5nb29nbGVz
+YW5kYm94LWNuLmNvbYINKi5nc3RhdGljLmNvbYIUKi5tZXRyaWMuZ3N0YXRpYy5j
+b22CCiouZ3Z0MS5jb22CESouZ2NwY2RuLmd2dDEuY29tggoqLmd2dDIuY29tgg4q
+LmdjcC5ndnQyLmNvbYIQKi51cmwuZ29vZ2xlLmNvbYIWKi55b3V0dWJlLW5vY29v
+a2llLmNvbYILKi55dGltZy5jb22CC2FuZHJvaWQuY29tgg0qLmFuZHJvaWQuY29t
+ghMqLmZsYXNoLmFuZHJvaWQuY29tggRnLmNuggYqLmcuY26CBGcuY2+CBiouZy5j
+b4IGZ29vLmdsggp3d3cuZ29vLmdsghRnb29nbGUtYW5hbHl0aWNzLmNvbYIWKi5n
+b29nbGUtYW5hbHl0aWNzLmNvbYIKZ29vZ2xlLmNvbYISZ29vZ2xlY29tbWVyY2Uu
+Y29tghQqLmdvb2dsZWNvbW1lcmNlLmNvbYIIZ2dwaHQuY26CCiouZ2dwaHQuY26C
+CnVyY2hpbi5jb22CDCoudXJjaGluLmNvbYIIeW91dHUuYmWCC3lvdXR1YmUuY29t
+gg0qLnlvdXR1YmUuY29tghFtdXNpYy55b3V0dWJlLmNvbYITKi5tdXNpYy55b3V0
+dWJlLmNvbYIUeW91dHViZWVkdWNhdGlvbi5jb22CFioueW91dHViZWVkdWNhdGlv
+bi5jb22CD3lvdXR1YmVraWRzLmNvbYIRKi55b3V0dWJla2lkcy5jb22CBXl0LmJl
+ggcqLnl0LmJlghphbmRyb2lkLmNsaWVudHMuZ29vZ2xlLmNvbYITKi5hbmRyb2lk
+Lmdvb2dsZS5jboISKi5jaHJvbWUuZ29vZ2xlLmNughYqLmRldmVsb3BlcnMuZ29v
+Z2xlLmNuMBMGA1UdIAQMMAowCAYGZ4EMAQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0
+dHA6Ly9jLnBraS5nb29nL3dyMi9vUTZueXI4RjBtMC5jcmwwggEDBgorBgEEAdZ5
+AgQCBIH0BIHxAO8AdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAA
+AZOGugupAAAEAwBGMEQCIF8uQF4y9bHFQD0/0cSBAdqM4yyeR93s/TBLpLfz3U0e
+AiArD7AGQbK0kUJNJR/7tRLUs3+Y+zPT7EqHIbM6vlgYkwB2AOCSs/wMHcjnaDYf
+3mG5lk0KUngZinLWcsSwTaVtb1QEAAABk4a6DIAAAAQDAEcwRQIgTGMJCZwzVwPr
+WTXbggHHbi958tJa0a4lIBgfLoGmoacCIQCf5N5qLK4MLVB4Po5K5qdDANlLoEsR
+bGqeotxxDPGcajANBgkqhkiG9w0BAQsFAAOCAQEAKJVHhibAE7TcWZ6PXxrZtlJ1
+isUkJdbj3xIEgbsKZ0gfDhnfJc7haEzlAOWR2zaEmHhVYFTEyzkhoBBGKACwJucm
+eAfMf3eqTi4P9Z8t5I6F5FCEEAQH83wgEXAjyFfX/mYcChJ9aGKr1WORAHy+epQS
+rf3tc4IC7NeonAILcXFR84Tc9dIlLMCQ51wGfIBL2yy0xObY0u7ZqtMZTTz2EF0C
+XazZ/vbRZRbt8/tZouphqW8nyVFHcP0OnTeEM/MGkRzoGqblISr+x05OR7AGL6zr
+r5m3KnrpDAdM3pRY/8MkDX5sLoPrOm2f8IaW+CL66kShdA1PiiOULhWPgq9DYA==
+-----END CERTIFICATE-----
+subject=CN=*.google.com
+issuer=C=US, O=Google Trust Services, CN=WR2
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 6590 bytes and written 401 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+google.com => 115264962
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.facebook.com
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct  2 00:00:00 2024 GMT; NotAfter: Dec 31 23:59:59 2024 GMT
+ 1 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert High Assurance EV Root CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 22 12:00:00 2013 GMT; NotAfter: Oct 22 12:00:00 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGmDCCBYCgAwIBAgIQCnxM2NDTsisZ5eEmGcDzPjANBgkqhkiG9w0BAQsFADBw
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNz
+dXJhbmNlIFNlcnZlciBDQTAeFw0yNDEwMDIwMDAwMDBaFw0yNDEyMzEyMzU5NTla
+MG8xCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRMwEQYDVQQHEwpN
+ZW5sbyBQYXJrMR0wGwYDVQQKExRNZXRhIFBsYXRmb3JtcywgSW5jLjEXMBUGA1UE
+AwwOKi5mYWNlYm9vay5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASOTKDL
++xR6VX+uNmJ9bay/5O8v+5xv+6jLSKOIppNCHotv4etz3R/QzGUDVosbXH1vZVAl
+muVrNV8aFQJM4HvDo4ID+DCCA/QwHwYDVR0jBBgwFoAUUWj/kK8CB3U8zNllZGKi
+ErhZcjswHQYDVR0OBBYEFPDe0iA+6X45I43MbkHbV/aANJkhMIG1BgNVHREEga0w
+gaqCDiouZmFjZWJvb2suY29tgg4qLmZhY2Vib29rLm5ldIILKi5mYmNkbi5uZXSC
+CyouZmJzYnguY29tghAqLm0uZmFjZWJvb2suY29tgg8qLm1lc3Nlbmdlci5jb22C
+DioueHguZmJjZG4ubmV0gg4qLnh5LmZiY2RuLm5ldIIOKi54ei5mYmNkbi5uZXSC
+DGZhY2Vib29rLmNvbYINbWVzc2VuZ2VyLmNvbTA+BgNVHSAENzA1MDMGBmeBDAEC
+AjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYD
+VR0PAQH/BAQDAgOIMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjB1BgNV
+HR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc2hhMi1oYS1z
+ZXJ2ZXItZzYuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5kaWdpY2VydC5jb20vc2hh
+Mi1oYS1zZXJ2ZXItZzYuY3JsMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYBBQUHMAGG
+GGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0cDovL2Nh
+Y2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFuY2VTZXJ2
+ZXJDQS5jcnQwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFo
+AHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGSSp5Z1gAABAMA
+SDBGAiEAxVff//y2e0zKsEpijqFiIONWW6Vv3oxUXAOj7ijjBQwCIQDX9dJVK8H5
+BhEzcU1kAXIeYTCs5kwffISxYoaE5kQ5qAB2ANq2v2s/tbYin5vCu1xr6HCRcWy7
+UYSFNL2kPTBI1/urAAABkkqeWUsAAAQDAEcwRQIhAI6viNsZpCDSafZ5v5X0Dj3L
+9JCRLEJa/hrNIk5zq1gLAiAZNnrlYT4z9OS0fmQvJEmt3DCJvKc9Xnsrk9lWYHfX
+hQB1AD8XS0/XIkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAABkkqeWgMAAAQD
+AEYwRAIgOEEXS+0P/HYHd6qtuqxpv9zlBZjy2Y2hN9V5KiO83mcCIHTdqfEm+1ns
+LzHD8Gk0MfLZqEsXqP/a4RW7cyTQBWghMA0GCSqGSIb3DQEBCwUAA4IBAQAn26wn
+TAJhFL3RBxg6jHw0W3N6IIaB1USw+FXEhMObne/N9/FOXy43bFT1EpTkU+3g+NK3
+dBl6FBBbndFn2mYzNh4oVdTQklgWLNSMwbfOjDY380zo+T81GS+W0XM0SU/eLoga
+By6o3Ex4CVSGZxfGR9UIW/9NJKKH5RcPHOeAZd9C/zxMxKHfCDgrxjUSbIZHTeeW
+eOT5MZtgEs6T4ShOEAZ8F7BpwCwSPxJR+qT7dnG/9C+LCtIZij5TlltF6qJNRonr
+oWd6XxdcFOSs8jbNj5RBvQU7I263xJGi2BH6tE94eR3VRFOnNhM36QDt2ylMsaJN
+CbDww0tgnSji9mco
+-----END CERTIFICATE-----
+subject=C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.facebook.com
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2449 bytes and written 387 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_CHACHA20_POLY1305_SHA256
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+facebook.com => 66053836
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=North Carolina, L=Raleigh, O=Red Hat, Inc., CN=redhat.com
+   i:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 18 00:00:00 2024 GMT; NotAfter: Mar 18 23:59:59 2025 GMT
+ 1 s:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 30 00:00:00 2021 GMT; NotAfter: Mar 29 23:59:59 2031 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIHzzCCBregAwIBAgIQBp8NGrgki5RtMEfztLke+DANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjQw
+MzE4MDAwMDAwWhcNMjUwMzE4MjM1OTU5WjBlMQswCQYDVQQGEwJVUzEXMBUGA1UE
+CBMOTm9ydGggQ2Fyb2xpbmExEDAOBgNVBAcTB1JhbGVpZ2gxFjAUBgNVBAoTDVJl
+ZCBIYXQsIEluYy4xEzARBgNVBAMTCnJlZGhhdC5jb20wggIiMA0GCSqGSIb3DQEB
+AQUAA4ICDwAwggIKAoICAQCbRe+d08e5zkQrUw+U4l/w98m4LkkqENMiPOO7kGD/
+4fmAU/ca+MtEFiRqQzJV189waFRJSxFpWrxPHAm5Ld5gzMorHc8KMD66DLtJW4F2
+lBPf/GusoLhwIRAvfwl0s0CQIMgQfj1nfWfTwFfP21mul4SYs4GQxO/ad3LaL+yE
+Txxd3+v6eGXjoFVplnjld4WIGMfFwUTggQ235ZfbEwy7z2Ku5rTqOaU4gCVdNYhj
+O44ggtaIwj8kAAgnI3k3MlrBb1r1J0lgmHDW4uGdABduFIlXlc47DSzms88WNJQz
+Xy9ncdZTPjInb8c74Dy7Qnh9t8sjzCf7d18k/OpDp0uRjSSQL1WLfGts1miwcKL0
+wLVC6tj0H98pHPqFwfmtTghMz5rvxXsAfXP3XxOYQE4oSUYjgfCww8EIBpUCCxDn
+NCcbqN7yTvvKhDKYZZmgaeUkqpbTslqLvwo9cXEDI6WZ2FaLhlBWR79W1VFgD9ix
+OxnPMrm+xB4N9Ba7V6/88AWYB83cxc4RcJYrg5D0XSvoMDnrKjb3HrHgtSWexaxQ
+NI75UkBi06VPoMNDw9ksbnbjPjpqa2GD3Qj1dQzxmYqB0P9jFCbxauOw+yN9ZDY4
+kfZ5OWSynH4oMAY7Q0Euj0Xx2RwpGdK/XQmSYuHS3opxJuCBVkGkoALkXVeDaV8r
+cQIDAQABo4IDhTCCA4EwHwYDVR0jBBgwFoAUdIWAwGbH3zfez70pN6oDHb7tzRcw
+HQYDVR0OBBYEFBn9sn4FOORt9J40xroq2F8H4TD9MBUGA1UdEQQOMAyCCnJlZGhh
+dC5jb20wPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDov
+L3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAU
+BggrBgEFBQcDAQYIKwYBBQUHAwIwgZ8GA1UdHwSBlzCBlDBIoEagRIZCaHR0cDov
+L2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsRzJUTFNSU0FTSEEyNTYy
+MDIwQ0ExLTEuY3JsMEigRqBEhkJodHRwOi8vY3JsNC5kaWdpY2VydC5jb20vRGln
+aUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5jcmwwgYcGCCsGAQUF
+BwEBBHsweTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMFEG
+CCsGAQUFBzAChkVodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRH
+bG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCC
+AX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYAzxFW7tUufK/zh1vZaS6b6RpxZ0qw
+F+ysAdJbd87MOwgAAAGOUVBRcAAABAMARzBFAiEAhr0Rxv/LAzsBIBrE3GEXFpfW
+YRH3hbbICcAI8OKYx0kCIDlEiZu79J79o1hkDEAgFtn9XI1ujyhbhAmiRW1QQhcG
+AHYAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGOUVBRcAAABAMA
+RzBFAiEAvl/ucjz3eUcIYnmrRufBvZNwAc3xmhHU/Sf4ibbex3sCID7UHwFHNQZ5
+jtL31Jc+gQ8nXu+zHDTUnCaaQBAaPs8BAHUA5tIxY0B3jMEQQQbXcbnOwdJA9paE
+hvu6hzId/R43jlAAAAGOUVBRkwAABAMARjBEAiBPWYlGpLMnUW3voBSTWaux32Bs
+LPtsstldOnOpW3/4qgIgcJnoP/qb2BRX1gPy/L6rcF8k5dekshWZXbkCSFtHkw0w
+DQYJKoZIhvcNAQELBQADggEBAKW8mA3c2wZ6uQF9sMP6DQyrbjzheJdcL99uYCBE
+ygDgOD/VuXgWgLli+whiYsszixduMhWapkOZklzAOYYuNgr4E+Hb2j2vtuBOMKQn
+hj/sCO6+uInisGEWooIG/Q15+4twvEW4T9xxu4l5YxhIlfIIJ1bq9qXVyKLE8T7Y
+lo7WqyshBLE/T4XlLNlwMQZChmoQbpr5g75CuPslL0B+MWV4LrHp/rHjUmJUSRXo
+bc3doZ89FB04RG2FP88zGitZ/yQ0d3W6pSWe+YN1iQHqAUdnY4PdU9IpK1pWHnVY
+eVWHPqmI3e69AKEa+p6d1LV8ZoLuocaIfY5VrOMd2u4vYrI=
+-----END CERTIFICATE-----
+subject=C=US, ST=North Carolina, L=Raleigh, O=Red Hat, Inc., CN=redhat.com
+issuer=C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4052 bytes and written 401 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 4096 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+redhat.com => 568495098
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=infinispan.org
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  4 21:05:20 2024 GMT; NotAfter: Feb  2 21:05:19 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIE6zCCA9OgAwIBAgISA/56Y/YHk6dhCBnPOm4Vw554MA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjQxMTA0MjEwNTIwWhcNMjUwMjAyMjEwNTE5WjAZMRcwFQYDVQQD
+Ew5pbmZpbmlzcGFuLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AJiYWOvsy7Z3gehwDociMe/SY2NnAZyQThAWlJz1GbYFMFa2gkFi1DELecDU4cE2
+Ex9ccBYh0BxTE4w8DIxdFUf4x5QpQY/C47Iptht3jahz6thjkTfSJlBhoQS9+nYi
+BqWgPdwHS4+3BiS2F5Iuya7cFiwsw2yUIy2fndRA2pgmPWeHN7ZMpKPuUjHjhyzt
+OO5wpbWYfcOHlvsuRWyibCT/Y0K25HzUX2uWcyR6DKWJaIbxcQN5Uw6IHG5apfCA
+DGYNpKIgtbkJHAA1jzyJp4qMTlf9HigZOmPQVgPp9TINN0A/mpBxM9fXtH5BSLQF
+qo73ZTaHh2bK/22DQ+9IrI0CAwEAAaOCAhEwggINMA4GA1UdDwEB/wQEAwIFoDAd
+BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNV
+HQ4EFgQUWMmyqmjmpUjM2CvoQrK/f75FZmgwHwYDVR0jBBgwFoAUxc9GpOr0w8B6
+bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8v
+cjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iu
+b3JnLzAZBgNVHREEEjAQgg5pbmZpbmlzcGFuLm9yZzATBgNVHSAEDDAKMAgGBmeB
+DAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1AKLjCuRF772tm3447Udnd1PX
+gluElNcrXhssxLlQpEfnAAABkvk0qS4AAAQDAEYwRAIgVZen4aK2c6cNhGVyLc7h
+ywSmwVOoUH9zSHnsIRxpT54CIGkr8tvl+woagKnekk5NChd8D5xhTlkRM07IUzlI
+25dIAHYAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGS+TSpZAAA
+BAMARzBFAiAl7SsWnoKQRgOznbFd1lU5Cof6u1vuteDCJdwaZ6hY1AIhAKnQUW++
+D6VE4cKvtlyEtU65OQZC9wTlp6VY9YTT06C8MA0GCSqGSIb3DQEBCwUAA4IBAQAS
+X/KHe20cLXWL9/ISXIocmPzpTc9VPpvmwXI+9hDRE87R6t61rHPHlGafDbExDzjX
+5z0j2Sc0dTsa8n32E4d2+uofU5bUwniQo6VPgIKPNA1TBxryW2ggG6SjdYdXLe7+
+LwvBmpsfDT6cskYa36PkiXrQDfHNd/uWtDf06Se3Zbkg+c17wsyK/Qs83wCZBtcO
+c9Q56G8SYNOaSM5YYdu5zBq+4OuUJZ3A7yHYaM8pDt4RT/27e40MSBZfWo2m5ZFj
+VEp3dBos0LeG0s42YTSem47ywgqHOXZuy7ibVb3IFk7vdKmRX1/hYcEZYVWzQEsY
+5QxR1+dkUsF4ZpbdztTd
+-----END CERTIFICATE-----
+subject=CN=infinispan.org
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3102 bytes and written 389 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: F5584E4F3E5B0E4AB6DB5EC6083BCDED6E330393D1291554111E84FE9EA73E27
+    Session-ID-ctx: 
+    Resumption PSK: 66962CCE9E0B81074979A7793B9958F25150164D041D7F422A60B60852D8ECD0
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 86400 (seconds)
+    TLS session ticket:
+    0000 - 92 12 c6 e8 60 2f 8a a4-b0 82 80 3b 9b e0 78 bc   ....`/.....;..x.
+    0010 - 69 5b e6 a6 d9 25 88 fa-3e ef d3 52 9c 01 72 86   i[...%..>..R..r.
+    0020 - 9e d3 16 79 f7 92 d4 40-c0 f7 5a 2a 30 38 8e 50   ...y...@..Z*08.P
+    0030 - b9 34 99 5b 24 0f 1c 74-42 b2 46 d9 79 97 3a d6   .4.[$..tB.F.y.:.
+    0040 - 46 c3 25 55 89 e9 30 fc-a7 bd b9 b0 00 3d ef 2d   F.%U..0......=.-
+    0050 - aa 04 a2 c9 0b 5e 06 35-2e 1e 13 69 cb 5f 57 d8   .....^.5...i._W.
+    0060 - 22 8f fa 9b 21 90 30 8e-b1 ae 78 b9 64 f3 c9 35   "...!.0...x.d..5
+    0070 - da de d1 6a 91 8a 72 ae-da 26 95 ac 69 8c d6 eb   ...j..r..&..i...
+    0080 - ee 9a 16 c6 17 2d 87 8d-0b 2a 97 9c b7 fe 19 08   .....-...*......
+    0090 - 61 72 0c 60 3c 2e 63 aa-04 9f 5d 21 1b d4 ed 78   ar.`<.c...]!...x
+
+    Start Time: 1735028484
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+infinispan.org => 97765850
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=IT, ST=Lazio, L=Roma, O=Almaviva - The Italian Innovation Company S.P.A, CN=www.almaviva.it
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  7 00:00:00 2023 GMT; NotAfter: Nov 15 23:59:59 2024 GMT
+ 1 s:C=IT, ST=Lazio, L=Roma, O=Almaviva - The Italian Innovation Company S.P.A, CN=www.almaviva.it
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  7 00:00:00 2023 GMT; NotAfter: Nov 15 23:59:59 2024 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIMKzCCCxOgAwIBAgIQBWHvk8iNf5M3aHOtHRDf8jANBgkqhkiG9w0BAQsFADBg
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR8wHQYDVQQDExZHZW9UcnVzdCBUTFMgUlNBIENBIEcx
+MB4XDTIzMTEwNzAwMDAwMFoXDTI0MTExNTIzNTk1OVowgYAxCzAJBgNVBAYTAklU
+MQ4wDAYDVQQIEwVMYXppbzENMAsGA1UEBxMEUm9tYTE4MDYGA1UEChMvQWxtYXZp
+dmEgLSBUaGUgSXRhbGlhbiBJbm5vdmF0aW9uIENvbXBhbnkgUy5QLkExGDAWBgNV
+BAMTD3d3dy5hbG1hdml2YS5pdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAOEgpLjmbdfKGiSYgyczrdTT6L7IE2mLkuDe3TiGGipk66wB2xACLJGniafs
+hA6UV7n5spxuPfsVWRJcjSlUgyTPn65LiDkiLa7V7FvrQFZZap+KMiJNPn+L2mjH
+JlyCGeTg/E3TaCFHCW5xuRpb6IoLJTienns+58yNE3u40rPS2Onyvb5bJ3IVQmav
+wZ7lft3dvRTB4l+4I2JkezYEt6qgY2iCOpSP4Bv9joi4T4H0K2lJnESTHHDlbwBC
+xdnIqGlrf9YJIarYIwE2c2algYAKeVQTdGsBSpVqhuRFx3Vegsf1XF69m0FaDM9m
+NbGzb56GNvaULqVQHuLXJwiCOl0CAwEAAaOCCL4wggi6MB8GA1UdIwQYMBaAFJRP
+1F2L5KTipoD+/dj5AO+jvgJXMB0GA1UdDgQWBBSxfamMVebLwcPsVwzB3jOgMO1P
+GjCCBb0GA1UdEQSCBbQwggWwgg93d3cuYWxtYXZpdmEuaXSCEmFsbWF2aXZhY29u
+dGFjdC5pdIITYWxtYXZpdmFjb250YWN0Lm9yZ4ITYWxtYXZpdmFjb250YWN0LmNv
+bYISYWxtYXZpdmFjb250YWN0LmV1ghNhbG1hdml2YWNvbnRhY3QubmV0ghJhbG1h
+Y29udGFjdC5jb20uY2+CDmFsbWFjb250YWN0LmNvgg9hbG1hY29udGFjdC5vcmeC
+D2FsbWFjb250YWN0LmNvbYIOYWxtYWNvbnRhY3QuZXWCD2FsbWFjb250YWN0Lm5l
+dIIXYWxtYXZpdmFkb2JyYXNpbC5jb20uYnKCE2FsbWF2aXZhZG9icmFzaWwuaXSC
+FGFsbWF2aXZhZG9icmFzaWwub3JnghRhbG1hdml2YWRvYnJhc2lsLmNvbYITYWxt
+YXZpdmFkb2JyYXNpbC5ldYIUYWxtYXZpdmFkb2JyYXNpbC5uZXSCFmFsbWF2aXZh
+dHVuaXNpZS5jb20udG6CEmFsbWF2aXZhdHVuaXNpZS50boISYWxtYXZpdmF0dW5p
+c2llLml0ghNhbG1hdml2YXR1bmlzaWUub3JnghNhbG1hdml2YXR1bmlzaWUuY29t
+ghJhbG1hdml2YXR1bmlzaWUuZXWCE2FsbWF2aXZhdHVuaXNpZS5uZXSCE2FsbWF2
+aXZhc2VydmljZXMucm+CE2FsbWF2aXZhc2VydmljZXMuaXSCFGFsbWF2aXZhc2Vy
+dmljZXMuY29tghRhbG1hdml2YXNlcnZpY2VzLm9yZ4ITYWxtYXZpdmFzZXJ2aWNl
+cy5ldYIUYWxtYXZpdmFzZXJ2aWNlcy5uZXSCC2FsbWF2aXZhLml0gg9kY20uYWxt
+YXZpdmEuaXSCD2NybS5hbG1hdml2YS5pdIIWd3d3LmFsbWF2aXZhY29udGFjdC5p
+dIIXd3d3LmFsbWF2aXZhY29udGFjdC5vcmeCF3d3dy5hbG1hdml2YWNvbnRhY3Qu
+Y29tghZ3d3cuYWxtYXZpdmFjb250YWN0LmV1ghd3d3cuYWxtYXZpdmFjb250YWN0
+Lm5ldIIWd3d3LmFsbWFjb250YWN0LmNvbS5jb4ISd3d3LmFsbWFjb250YWN0LmNv
+ghN3d3cuYWxtYWNvbnRhY3Qub3JnghN3d3cuYWxtYWNvbnRhY3QuY29tghJ3d3cu
+YWxtYWNvbnRhY3QuZXWCE3d3dy5hbG1hY29udGFjdC5uZXSCG3d3dy5hbG1hdml2
+YWRvYnJhc2lsLmNvbS5icoIXd3d3LmFsbWF2aXZhZG9icmFzaWwuaXSCGHd3dy5h
+bG1hdml2YWRvYnJhc2lsLm9yZ4IYd3d3LmFsbWF2aXZhZG9icmFzaWwuY29tghd3
+d3cuYWxtYXZpdmFkb2JyYXNpbC5ldYIYd3d3LmFsbWF2aXZhZG9icmFzaWwubmV0
+ghp3d3cuYWxtYXZpdmF0dW5pc2llLmNvbS50boIWd3d3LmFsbWF2aXZhdHVuaXNp
+ZS50boIWd3d3LmFsbWF2aXZhdHVuaXNpZS5pdIIXd3d3LmFsbWF2aXZhdHVuaXNp
+ZS5vcmeCF3d3dy5hbG1hdml2YXR1bmlzaWUuY29tghZ3d3cuYWxtYXZpdmF0dW5p
+c2llLmV1ghd3d3cuYWxtYXZpdmF0dW5pc2llLm5ldIIXd3d3LmFsbWF2aXZhc2Vy
+dmljZXMucm+CF3d3dy5hbG1hdml2YXNlcnZpY2VzLml0ghh3d3cuYWxtYXZpdmFz
+ZXJ2aWNlcy5jb22CGHd3dy5hbG1hdml2YXNlcnZpY2VzLm9yZ4IXd3d3LmFsbWF2
+aXZhc2VydmljZXMuZXWCGHd3dy5hbG1hdml2YXNlcnZpY2VzLm5ldIITd3d3LmRj
+bS5hbG1hdml2YS5pdIITd3d3LmNybS5hbG1hdml2YS5pdDA+BgNVHSAENzA1MDMG
+BmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9D
+UFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
+AjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY2RwLmdlb3RydXN0LmNvbS9HZW9U
+cnVzdFRMU1JTQUNBRzEuY3JsMHYGCCsGAQUFBwEBBGowaDAmBggrBgEFBQcwAYYa
+aHR0cDovL3N0YXR1cy5nZW90cnVzdC5jb20wPgYIKwYBBQUHMAKGMmh0dHA6Ly9j
+YWNlcnRzLmdlb3RydXN0LmNvbS9HZW9UcnVzdFRMU1JTQUNBRzEuY3J0MAwGA1Ud
+EwEB/wQCMAAwggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB2AHb/iD8KtvuVUcJh
+zPWHujS0pM27KdxoQgqf5mdMWjp0AAABi6l5nKYAAAQDAEcwRQIhAI3apkgYVu5/
+K2q82ML5PQXUVVraCBcmzmooRooOWqhAAiBkczgvYFOVv1gUiOum8jK16j5ThFOS
+dgLNLbHls4WIawB3AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAAB
+i6l5nG8AAAQDAEgwRgIhAPLhry7Jc6wi0HjxGLXhfIun/NtxV1dlrycpIvBg0vBx
+AiEAwp2ZVKf6HS0Hf2rmW13JVw5OBDznwO5wNG9YGKvK8FgAdgA/F0tP1yJHWJQd
+ZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAYupeZyyAAAEAwBHMEUCIEn+eYmE/DH3
+4oUkCXygqqxU3z29ebCqAUzVFgjVXv6PAiEAz2U2UMkgnoxlkmQWpWjnhQZhxnFj
+gSVFNohWUAk2VVUwDQYJKoZIhvcNAQELBQADggEBAGDwEZ8pAkevccr1jh0vEfTt
+eAyPeeEmd5wrEoaCpB09MUfKzybyH7GYibmqt4z8u7/ZS+Tmyhf0TmYqyw2BqAoT
+UpwqY7p0RzprHpruib1/CWYC/kmL6IY1cGW1xJjcak6TSFVmWhEJ0B+N8lY/xjdg
+c5r4vHLkmTSyLJI+vWz5JAr9wOAYoqGED/Hkj8tRgCXgehDyebWX4mVBkV20PS2D
+RCWo5gy5vbslWolYPLMHnVo4fbaiXKC+pTMl07H42kW2ddsMwzKA1Rq0ni4c1TEy
+UA1pKsR7M9QvnFCmVOntG5xCyZHEakilV8pR7LWeVOmQ+JwvfEhx5u2SsX7g3oQ=
+-----END CERTIFICATE-----
+subject=C=IT, ST=Lazio, L=Roma, O=Almaviva - The Italian Innovation Company S.P.A, CN=www.almaviva.it
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 6911 bytes and written 448 bytes
+Verification error: certificate has expired
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: B66CCF484BB90CA898F1B8B5CC436978108D27A6F63426303CEAAC60A9BDE3BE
+    Session-ID-ctx: 
+    Master-Key: DF689D22D6544EED3587CF369F3B76BF2A04C49155228749314B1AE5E350E44E3C0E798BAFB75CAC400D2FD8689EC86A
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 86400 (seconds)
+    TLS session ticket:
+    0000 - 01 54 c0 ae d9 f8 15 22-a1 32 81 26 92 58 f7 fc   .T.....".2.&.X..
+    0010 - 59 f2 19 56 f4 e7 6d e3-a7 ae 86 20 60 ea b1 91   Y..V..m.... `...
+    0020 - a3 d4 0d eb 2a a0 d6 87-15 23 80 72 cc f1 6e b0   ....*....#.r..n.
+    0030 - 35 9a a1 1c 69 2c c4 05-05 85 90 38 56 1c 29 21   5...i,.....8V.)!
+    0040 - 3d d1 9e 58 5c d3 ca 6a-91 5e 13 93 66 ef 2f 17   =..X\..j.^..f./.
+    0050 - 0e 3e ee 97 91 57 f8 b7-a6 17 1a 7c a9 b2 57 bc   .>...W.....|..W.
+    0060 - 3e 54 52 28 ac 8b 2f 84-a4 38 ec 39 7c 94 2b 36   >TR(../..8.9|.+6
+    0070 - 88 20 bd cc 7a 5e ce fb-68 02 09 97 1c 01 d1 25   . ..z^..h......%
+    0080 - 9b 49 03 7d b8 82 d4 2f-52 b6                     .I.}.../R.
+
+    Start Time: 1735028484
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+    Extended master secret: yes
+---
+almaviva.it => 216864263
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=IT, ST=Lazio, L=Roma, O=ENGINEERING - INGEGNERIA INFORMATICA - S.P.A., CN=*.eng.it
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Jun 12 00:00:00 2024 GMT; NotAfter: May 30 23:59:59 2025 GMT
+ 1 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  2 12:23:37 2017 GMT; NotAfter: Nov  2 12:23:37 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGfTCCBWWgAwIBAgIQBdXtv4kxLGzt7Gf9NlaBfjANBgkqhkiG9w0BAQsFADBg
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR8wHQYDVQQDExZHZW9UcnVzdCBUTFMgUlNBIENBIEcx
+MB4XDTI0MDYxMjAwMDAwMFoXDTI1MDUzMDIzNTk1OVowdzELMAkGA1UEBhMCSVQx
+DjAMBgNVBAgTBUxhemlvMQ0wCwYDVQQHEwRSb21hMTYwNAYDVQQKEy1FTkdJTkVF
+UklORyAtIElOR0VHTkVSSUEgSU5GT1JNQVRJQ0EgLSBTLlAuQS4xETAPBgNVBAMM
+CCouZW5nLml0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvtd65B+H
+5I7mFeaTFsDo0KsGyaFnVKecbsHexFVZzGWIhxGI4VrieJemGM/OGijMEoGtLtwX
+E4+SE7NN/Jbkc5kCqwhSPu7SirOgW30154GIICI8f26aK2s8LfKf8s8jmbC9EmDE
+XIZP3uAEEDwpgqo3Mcgk/AQliUAPnJijhzyUUd4wb6xqdEiMSHRY3tTJsQ/ATW3G
+TmsL+nmRTP/BiWOPB1cyu7ooI6sSJGbdnjGutf8+4+KC42XdUx1uPrv/ncuvRGqu
+6Yun7uPSUuJm41jmecLiYdEMv9DcjUeSJ2DEOns9jaApFYNTBJ2v2hCYrOtc/goA
+mAYd3J6K88Di4QIDAQABo4IDGjCCAxYwHwYDVR0jBBgwFoAUlE/UXYvkpOKmgP79
+2PkA76O+AlcwHQYDVR0OBBYEFCxZW/m4aYEnDw4KVpTJ+sDCGBUvMBsGA1UdEQQU
+MBKCCCouZW5nLml0ggZlbmcuaXQwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggr
+BgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQE
+AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwPwYDVR0fBDgwNjA0
+oDKgMIYuaHR0cDovL2NkcC5nZW90cnVzdC5jb20vR2VvVHJ1c3RUTFNSU0FDQUcx
+LmNybDB2BggrBgEFBQcBAQRqMGgwJgYIKwYBBQUHMAGGGmh0dHA6Ly9zdGF0dXMu
+Z2VvdHJ1c3QuY29tMD4GCCsGAQUFBzAChjJodHRwOi8vY2FjZXJ0cy5nZW90cnVz
+dC5jb20vR2VvVHJ1c3RUTFNSU0FDQUcxLmNydDAMBgNVHRMBAf8EAjAAMIIBfwYK
+KwYBBAHWeQIEAgSCAW8EggFrAWkAdgDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB
+0lt3zsw7CAAAAZAL0rt6AAAEAwBHMEUCIQDvoMnkSPjBSFgiVVE1ZBY1brrKA6CZ
+X7MFwpWt/vfNYAIgbzL7vdcmPhziAzKMrs53AwixTPwnrb17mDG4b7ZUSHMAdgB9
+WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAZAL0rs4AAAEAwBHMEUC
+IQDNU0HwzPzG7nCSvSV+ZZEeLjQOBdB9qn5Nr5u9bMtGHwIgJkl7e3l0/quwfmd6
+pcshsGW6pHJWTak59v2aqZn9O3MAdwDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qH
+Mh39HjeOUAAAAZAL0rtQAAAEAwBIMEYCIQCD+UB2bHrPsMG/0VOypDiENpCgaflM
+MmYtkzi9VK1FzAIhAKmM6p/+5ebVd+gnw9LHSI+5D+XA4kZBajykzpmud/NtMA0G
+CSqGSIb3DQEBCwUAA4IBAQCDv5j7G0+1A/+r+cUUuuLe36SN2J92SdrDWEaIOP9U
+jQ2TPbXUjSIn8RdMkDr8Wcv6NNkkI06DGdHtdL3/9FJZUaaxawKpxM2fmE7bg71d
+UDfNUO+otpAeoWN8dH7I88Pt2tDy3eAOddyCPsBuPRfa8/VslQ3FfDqgnqY7JMk0
+RRJ/vtOMvJ0LqftUqda4W+37pFscMw8WXnyHpXcLTGu4dd8MyuUFhb2dMmHxRigt
+yDgJUdtdTMrCw3ljaGd4FY0jjnd783No5lDxC9AE4qkaSYhuNlEHcgjwMzwHVkBg
++NSyPPhA55jNCP8tNbYmcsx+bqxn76FDtZh2bnVh+Qzz
+-----END CERTIFICATE-----
+subject=C=IT, ST=Lazio, L=Roma, O=ENGINEERING - INGEGNERIA INFORMATICA - S.P.A., CN=*.eng.it
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3383 bytes and written 385 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: D8B11879EB1E8A625D4D2D98D75C3AE060E6B364C7C9D18C780EA31BA96F145C
+    Session-ID-ctx: 
+    Resumption PSK: D77936605B9339ED03F69E254599E8E19613DA5CF0CE1CA9B2283D8949F582E9
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 86400 (seconds)
+    TLS session ticket:
+    0000 - 92 12 c6 e8 60 2f 8a a4-b0 82 80 3b 9b e0 78 bc   ....`/.....;..x.
+    0010 - dc 97 07 56 9c 02 ec 18-83 81 19 30 89 f5 2d 93   ...V.......0..-.
+    0020 - 81 2e 94 90 a7 06 43 19-fa 70 87 ce 99 f9 f1 d6   ......C..p......
+    0030 - ca 2a ce 60 c3 3b a8 aa-31 cb ee 97 4e 48 a4 2d   .*.`.;..1...NH.-
+    0040 - cf 7c 3b ad cb 27 f6 f2-98 7d d6 81 f7 d4 2e da   .|;..'...}......
+    0050 - 2e 0b 62 ed bd ab f3 4d-c4 04 86 76 48 50 1a c5   ..b....M...vHP..
+    0060 - 68 51 c2 a0 0e 37 d8 6b-e3 79 db dd b0 26 3f 60   hQ...7.k.y...&?`
+    0070 - 54 e9 2f 64 03 18 0c a8-4c 51 40 eb 49 6a 3b 42   T./d....LQ@.Ij;B
+    0080 - 3c 59 6c bb 21 c8 a5 5a-60 6d 0e 80 a1 e3 a7 2e   <Yl.!..Z`m......
+    0090 - 96 78 db e3 2b 59 84 23-a3 39 bb e3 19 1d 48 56   .x..+Y.#.9....HV
+
+    Start Time: 1735028484
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+www.eng.it => 109731688
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=FR, ST=Hauts-de-Seine, L=Issy-les-Moulineaux, O=EDENRED SE, CN=edenred.it
+   i:C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct  9 12:26:04 2024 GMT; NotAfter: Nov 10 12:26:03 2025 GMT
+ 1 s:C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018
+   i:OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 21 00:00:00 2018 GMT; NotAfter: Nov 21 00:00:00 2028 GMT
+ 2 s:C=BE, O=GlobalSign nv-sa, CN=GlobalSign Extended Validation CA - SHA256 - G3
+   i:OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Sep 21 00:00:00 2016 GMT; NotAfter: Sep 21 00:00:00 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGnDCCBYSgAwIBAgIMSoBqhxuyuogwmfxZMA0GCSqGSIb3DQEBCwUAMFAxCzAJ
+BgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSYwJAYDVQQDEx1H
+bG9iYWxTaWduIFJTQSBPViBTU0wgQ0EgMjAxODAeFw0yNDEwMDkxMjI2MDRaFw0y
+NTExMTAxMjI2MDNaMG4xCzAJBgNVBAYTAkZSMRcwFQYDVQQIEw5IYXV0cy1kZS1T
+ZWluZTEcMBoGA1UEBxMTSXNzeS1sZXMtTW91bGluZWF1eDETMBEGA1UEChMKRURF
+TlJFRCBTRTETMBEGA1UEAxMKZWRlbnJlZC5pdDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBANHdTbQpgOSwx1rS59OVJkR6wyM1Iou1LTvS1kD5FYsoTgeM
+wQJwK66V3mpyEnjOykWDAg5Jrrmrh2Lr4DfKsEniYRq/yLdclpeC+uZbwTM2QwKz
+N4yGnB19S9J4oV5O/++Ss7jf/rt5Dv+3zoeyzfWamMzUpPbt7V8bBiht7rRKv9hq
+T/F0tFSg+jQa2c2D5raYvXXHF37MHPEFJrF0dZwLA0dtLNdCBNAf/iexcGb3qCxt
+P4K+qQhVEJnG79kuyUmtZyTFxraQIzM73m1mzeMGw9QgE0cceWl7qno9l5dy1i+U
+s/iGQE4v28SqktnFEmODjUDh2XXCWWusISLnhZ8CAwEAAaOCA1YwggNSMA4GA1Ud
+DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMIGOBggrBgEFBQcBAQSBgTB/MEQGCCsG
+AQUFBzAChjhodHRwOi8vc2VjdXJlLmdsb2JhbHNpZ24uY29tL2NhY2VydC9nc3Jz
+YW92c3NsY2EyMDE4LmNydDA3BggrBgEFBQcwAYYraHR0cDovL29jc3AuZ2xvYmFs
+c2lnbi5jb20vZ3Nyc2FvdnNzbGNhMjAxODBWBgNVHSAETzBNMEEGCSsGAQQBoDIB
+FDA0MDIGCCsGAQUFBwIBFiZodHRwczovL3d3dy5nbG9iYWxzaWduLmNvbS9yZXBv
+c2l0b3J5LzAIBgZngQwBAgIwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cDovL2NybC5n
+bG9iYWxzaWduLmNvbS9nc3JzYW92c3NsY2EyMDE4LmNybDAlBgNVHREEHjAcggpl
+ZGVucmVkLml0gg53d3cuZWRlbnJlZC5pdDAdBgNVHSUEFjAUBggrBgEFBQcDAQYI
+KwYBBQUHAwIwHwYDVR0jBBgwFoAU+O9/8s14Z6jeb48kjYjxhwMCs+swHQYDVR0O
+BBYEFA404/acm9pkc3McvGEY84dcd2aZMIIBgAYKKwYBBAHWeQIEAgSCAXAEggFs
+AWoAdwCvGBoo1oyj4KmKTJxnqwn4u7wiuq68sTijoZ3T+bYDDQAAAZJxPmGKAAAE
+AwBIMEYCIQD5+ZkWMVPTLp5YQIv5PTG04PBS48uVnL1g0HBGLEQeFgIhAKBtMx0r
+KPYnI0EZBHOLk7mg9FM2S/e7oxC/YyBXghQvAHcA5tIxY0B3jMEQQQbXcbnOwdJA
+9paEhvu6hzId/R43jlAAAAGScT5hrAAABAMASDBGAiEA1A6uh8XuLLkVQnam/Wd7
+WBIm1qLk1DzLutqiaxb54EYCIQCWbMOcMByZj8xxd6FEJFqkxR1bvPPl5TFATdab
+m17GmwB2AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2Ciysu8gqAAABknE+YcQA
+AAQDAEcwRQIgeBKDInA+jMCsw3N67+7wT+bNirub3CjzdRy2BBBx3acCIQDzGP9g
++ZI7TQFWYXs2uJQcXM3D+pOUbi9pt7ZfnxseOzANBgkqhkiG9w0BAQsFAAOCAQEA
+JfECqj7Chj4qgkViyyfjsZdf+fR4gL4g18IA4b6iIzGke1yya8lOjX7v6tCbgRVE
++fOPLBH9soRh/Jb4ojY4f2dfi3SX1oFR5dDWJlVwJjnPU6fFk+vimd14gd164s3e
+CWgTkO2vBbJ7b0MUi1ivkTsHoGRmjXYbXyTBw7kRHz6jOpOvcodn1XLfrzzgO7iZ
+4xEHXlJuqy851gUe3mrloP30xc5yEipLEnEGfee7FXyegWJPD1fTqbCQFxHjj4i7
+kTr45fetOJTNvSsj3My08vWFGdfHONaYrMubo5OxenWu2i5Zq9bn/sS4YgQZ3Syt
+mpgOvSj9mZjS/G5HJRK7rQ==
+-----END CERTIFICATE-----
+subject=C=FR, ST=Hauts-de-Seine, L=Issy-les-Moulineaux, O=EDENRED SE, CN=edenred.it
+issuer=C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4497 bytes and written 401 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+edenred.it => 108295706
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=IT, ST=Lazio, O=ESA-ESRIN (European Space Agency Research Institute), CN=www.esa.int
+   i:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Organization Validation Secure Server CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct  8 00:00:00 2024 GMT; NotAfter: Oct  8 23:59:59 2025 GMT
+ 1 s:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Organization Validation Secure Server CA
+   i:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Certification Authority
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Feb 12 00:00:00 2014 GMT; NotAfter: Feb 11 23:59:59 2029 GMT
+ 2 s:C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Certification Authority
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Jan  1 00:00:00 2004 GMT; NotAfter: Dec 31 23:59:59 2028 GMT
+ 3 s:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA1
+   v:NotBefore: Jan  1 00:00:00 2004 GMT; NotAfter: Dec 31 23:59:59 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIM8TCCC9mgAwIBAgIQYO8wD6GM26KEBh6e3ZoblDANBgkqhkiG9w0BAQsFADCB
+ljELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
+A1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxPDA6BgNV
+BAMTM0NPTU9ETyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNl
+cnZlciBDQTAeFw0yNDEwMDgwMDAwMDBaFw0yNTEwMDgyMzU5NTlaMHIxCzAJBgNV
+BAYTAklUMQ4wDAYDVQQIEwVMYXppbzE9MDsGA1UEChM0RVNBLUVTUklOIChFdXJv
+cGVhbiBTcGFjZSBBZ2VuY3kgUmVzZWFyY2ggSW5zdGl0dXRlKTEUMBIGA1UEAxML
+d3d3LmVzYS5pbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPditt
+Hovyz4IaiLkrs24xuUCEgv0PIyc1wzMOD9kSnWyU5Ku4l9dNQGLSVf1ergoinWsG
+4u6/jcPmuJQ25YvkEH0t9h0GCeGNLFpg2m3hVXhT40s84zm59i9AzOI5Sgpo8FO0
+P6EQomfVspfyJ4cBJPfuNTPEJYReZyrjDCbUH0aGUw8YZzziCvGHnHfa0in+Qvpn
+Qies4bixSXOlzPXKd+yMIUkgJQEMbkD9qBlqjyb3ZckknXHDkf2Kojah+JVgQX33
+V6851Xkg+k8mgZQhZ22riwTBLvlMDMNkP+IYqNCd1PZuKyD5BSN8e9AaVKWGZ0cs
+TohVXA9z0tk+j9TXAgMBAAGjgglcMIIJWDAfBgNVHSMEGDAWgBSa8yvaz61Pti+7
+KkhIKhK3G0LBJDAdBgNVHQ4EFgQU/U8/CFF5Qn8IE7vaqqD50Iq7fMcwDgYDVR0P
+AQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsG
+AQUFBwMCMEoGA1UdIARDMEEwNQYMKwYBBAGyMQECAQMEMCUwIwYIKwYBBQUHAgEW
+F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjBaBgNVHR8EUzBRME+g
+TaBLhklodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRp
+b25WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3JsMIGLBggrBgEFBQcBAQR/MH0w
+VQYIKwYBBQUHMAKGSWh0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9y
+Z2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwJAYIKwYBBQUH
+MAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAYAGCisGAQQB1nkCBAIEggFw
+BIIBbAFqAHcA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGSbBri
+2AAABAMASDBGAiEAnajQuSt498a7pyuUEkcVrh9H1h1oh7gHCgBOHLrMFLgCIQCE
+hpSC9NJKJzMgD2HJ1ZkqPzn4REDCc0/nB1Tve46g8wB2AMz7D2qFcQll/pWbU87p
+snwi6YVcDZeNtql+VMD+TA2wAAABkmwa4tgAAAQDAEcwRQIgD6F8G7M7cjUkFidE
+CLGWBMNtYw5p2PJsR0hQP30tX2QCIQC2fNPv9y6idhLKkKM1iST9DbnTyhQRrIw2
+zivU4pwzUAB3ABLxTjS9U3JMhAYZw48/ehP457Vih4icbTAFhOvlhiY6AAABkmwa
+4qwAAAQDAEgwRgIhAM6K8iCZHnbjkZidzBV5UQHsTwP20/Uc130soolSzlkVAiEA
+6M66sf2Xm4gNqlDotPGr1IK6dXa6pBqEhnHXq53GXEAwggYdBgNVHREEggYUMIIG
+EIILd3d3LmVzYS5pbnSCFmFsZXhhbmRlcmdlcnN0LmVzYS5pbnSCF2FuZHJlYXNt
+b2dlbnNlbi5lc2EuaW50gg9hcmlhbmU2LmVzYS5pbnSCEmFzdHJvbmF1dHMuZXNh
+LmludIITYXZhbXBvc3RvNDIuZXNhLmludIISYjE0Ym9va2luZy5lc2EuaW50gg1i
+bG9ncy5lc2EuaW50gh9ib29rZGlzY292ZXJlc2FsaXZlLWFjYy5lc2EuaW50ghti
+b29rZGlzY292ZXJlc2FsaXZlLmVzYS5pbnSCDWJyYW5kLmVzYS5pbnSCD2NhcmVl
+cnMuZXNhLmludIINY29tbXMuZXNhLmludIISZGdjYm9va2luZy5lc2EuaW50ghRk
+aXNjb3Zlci1hY2MuZXNhLmludIIYZGlzY292ZXItc3RhZ2luZy5lc2EuaW50ghBk
+aXNjb3Zlci5lc2EuaW50ghRkbG11bHRpbWVkaWEuZXNhLmludIIQZG93bmxvYWQu
+ZXNhLmludIINZW80c2QuZXNhLmludIIUZXNhLXBob3RvbGlicmFyeS5jb22CBmVz
+YS5iZYIGZXNhLmRlggZlc2EuZXOCBmVzYS5ldYIGZXNhLmZyggdlc2EuaW50ggZl
+c2EuaXSCBmVzYS5ubIIKZXNhLm9yZy5wdIINZXNhaXQuZXNhLmludIIVZXNhbXVs
+dGltZWRpYS5lc2EuaW50gg1lc2F0di5lc2EuaW50ghBlc2F3ZWJ0di5lc2EuaW50
+ghFncmVldGluZ3MuZXNhLmludIILa2lkcy5lc2EuZGWCC2tpZHMuZXNhLmVzggtr
+aWRzLmVzYS5mcoIMa2lkcy5lc2EuaW50ggtraWRzLmVzYS5pdIILa2lkcy5lc2Eu
+bmyCGWtpcnVuYXZpcnR1YWx0b3VyLmVzYS5pbnSCFWx1Y2FwYXJtaXRhbm8uZXNh
+LmludIIJbS5lc2EuaW50ghNtYXJjb3NpZWJlci5lc2EuaW50ghZtYXR0aGlhc21h
+dXJlci5lc2EuaW50ghttdWx0aW1lZGlhLWRlbGl2ZXJ5LmVzYS5pbnSCEm11bHRp
+bWVkaWEuZXNhLmludIIMb3Blbi5lc2EuaW50ghFvdXRwb3N0NDIuZXNhLmludIId
+cGFibG9hbHZhcmV6ZmVybmFuZGV6LmVzYS5pbnSCFHBhb2xvbmVzcG9saS5lc2Eu
+aW50ghhwaG90b2xpYnJhcnktYWNjLmVzYS5pbnSCFHBob3RvbGlicmFyeS5lc2Eu
+aW50ghBwcmVzZW5jZS5lc2EuaW50ghdyYXBoYWVsbGllZ2VvaXMuZXNhLmludIIW
+cm9zZW1hcnljb29nYW4uZXNhLmludIIPcm9zZXR0YS5lc2EuaW50gglzLmVzYS5p
+bnSCHXNhbWFudGhhY3Jpc3RvZm9yZXR0aS5lc2EuaW50ggxzaG9wLmVzYS5pbnSC
+FHNvcGhpZWFkZW5vdC5lc2EuaW50ghVzcGFjZWluaW1hZ2VzLmVzYS5pbnSCFXNw
+YWNlaW52aWRlb3MuZXNhLmludIIRc3BhY2VzaG9wLmVzYS5pbnSCD3N0b2NrdXAu
+ZXNhLmludIIOc3RyZWFtLmVzYS5pbnSCDHRlZHguZXNhLmludIISdGVsZXZpc2lv
+bi5lc2EuaW50ghV0aG9tYXNwZXNxdWV0LmVzYS5pbnSCEHRpbXBlYWtlLmVzYS5p
+bnSCDXRvb2xzLmVzYS5pbnSCEnR2ZG93bmxvYWQuZXNhLmludIIOdmlzaW9uLmVz
+YS5pbnSCE3d3dy1hY2MtYWRtLmVzYS5pbnSCD3d3dy1hY2MuZXNhLmludIIPd3d3
+LWFkbS5lc2EuaW50ghV3d3ctYW5hbHl0aWNzLmVzYS5pbnSCGHd3dy5lc2EtcGhv
+dG9saWJyYXJ5LmNvbYIKd3d3LmVzYS5iZYIKd3d3LmVzYS5kZYIKd3d3LmVzYS5l
+c4IKd3d3LmVzYS5ldYIKd3d3LmVzYS5mcoIKd3d3LmVzYS5pdIIKd3d3LmVzYS5u
+bIIOd3d3LmVzYS5vcmcucHQwDQYJKoZIhvcNAQELBQADggEBAKsVD1DRq8qn5V+B
+qhJ9oeIkRjJMrU2dFv5ZY2jJeUVUhSmiYHwbK25pj0h2nV+J16VP1Zl3zrKrxuVV
++Jfp/AXJJsfhyKMIEWiadiwg7+gpgXK3v3UXjUUd2fSyvgyJSSX9JT8G8ZStAb9d
+jLGwpTP8FdsnZce6R1OQR4hFGnq3KFtdfJUB8pTNiTpFePXwCwSpV2fWDh9l42+F
+Bk5dFAVV/HWCIUkNR20+GASHnxJv3QteA+vzEOQOLVZ9+d3UzGC5od47UD8NphQe
+iYEuUlocASsR8o0/ZQxxWYYjD8QBt96hDHPwD3lvzskMuN5g8+6+eWN+MP/yEW/6
+oID4ldQ=
+-----END CERTIFICATE-----
+subject=C=IT, ST=Lazio, O=ESA-ESRIN (European Space Agency Research Institute), CN=www.esa.int
+issuer=C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Organization Validation Secure Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 7879 bytes and written 444 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 82A07DD712E5987AE065E1B3C8151D223F083A0569FD2E51F880523CAC983B84
+    Session-ID-ctx: 
+    Master-Key: 27304DC09E82A0B731AC48FCDF4527E222ECF19D005720A327548B3CFC6EE45B450FC4C9A5931C9A8A4E5A271F2CEBF8
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1735028484
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+esa.int => 204531698
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=theguardian.com
+   i:C=BE, O=GlobalSign nv-sa, CN=GlobalSign Atlas R3 DV TLS CA 2024 Q3
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Sep 16 10:57:41 2024 GMT; NotAfter: Oct 18 10:57:40 2025 GMT
+ 1 s:C=BE, O=GlobalSign nv-sa, CN=GlobalSign Atlas R3 DV TLS CA 2024 Q3
+   i:OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Apr 17 03:17:30 2024 GMT; NotAfter: Apr 17 00:00:00 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIJSjCCCDKgAwIBAgIQAd0ztdSdMydXsmy6s4zuhzANBgkqhkiG9w0BAQsFADBY
+MQswCQYDVQQGEwJCRTEZMBcGA1UEChMQR2xvYmFsU2lnbiBudi1zYTEuMCwGA1UE
+AxMlR2xvYmFsU2lnbiBBdGxhcyBSMyBEViBUTFMgQ0EgMjAyNCBRMzAeFw0yNDA5
+MTYxMDU3NDFaFw0yNTEwMTgxMDU3NDBaMBoxGDAWBgNVBAMMD3RoZWd1YXJkaWFu
+LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANN8gEefcqcdlFKd
+VMTmBpFsJ+gRB3jM+QXrk2y8iaZG9IVbvhS9UkxH0akYvaA2aR1extY3Trf8HNdx
+CIcJFmbrKnoakhsBW/RDK/JB3gGLVQoNQsI9DUViAx9txisIN8Ns6QAkcN93C6fe
+d4Tqh9xoqIFJKQ5lpI6AKCGLVAZJgAxw1ZdT3HDxFtfJlI4jFX5NEUahLUSxa0CC
+tJJgvZQrwPpIH3UBbfPY4o8nHRJSsuzXcjGD/GoCWzDB97XpPJ/DeMGOON2X+ArO
+gSVCz8LuR5jNn+I6nfBv6KAGhKSYOqbcK1PNZld9iFsGUKsrLrDv+rsg4UnSC/Jz
+ttxLjY8CAwEAAaOCBkwwggZIMIIDAAYDVR0RBIIC9zCCAvOCD3RoZWd1YXJkaWFu
+LmNvbYIdKi5hZHZlcnRpc2luZy50aGVndWFyZGlhbi5jb22CGyouY29kZS5kZXYt
+Z3VhcmRpYW5hcGlzLmNvbYIaKi5jb2RlLmRldi10aGVndWFyZGlhbi5jb22CFSou
+ZGV2LXRoZWd1YXJkaWFuLmNvbYIbKi5lZGl0b3JpYWwudGhlZ3VhcmRpYW4uY29t
+ghcqLmVtYWlsLnRoZWd1YXJkaWFuLmNvbYIQKi5ndWFyZGlhbi5jby51a4ISKi5n
+dWFyZGlhbmFwaXMuY29tggwqLmd1aW0uY28udWuCECouZ3VpbWNvZGUuY28udWuC
+DSoub3BoYW4uY28udWuCGSoucWEuZGV2LWd1YXJkaWFuYXBpcy5jb22CGSouc2Vy
+dmljZS50aGVndWFyZGlhbi5jb22CEyoudGhlZ3VhcmRpYW4uY28udWuCESoudGhl
+Z3VhcmRpYW4uY29tghQqLnRoZWd1YXJkaWFuLmRlc2lnboIeYXBpLm5leHRnZW4u
+Z3VhcmRpYW5hcHBzLmNvLnVrgiNjb2RlLmFwaS5uZXh0Z2VuLmd1YXJkaWFuYXBw
+cy5jby51a4IRZGV2LWd1dG9vbHMuY28udWuCE2Rldi10aGVndWFyZGlhbi5jb22C
+Dmd1YXJkaWFuLmNvLnVrggpndWltLmNvLnVrgg1ndXRvb2xzLmNvLnVrghBpLmd1
+aW1jb2RlLmNvLnVrghBtZWRpYS5ndWltLmNvLnVrghJwYXN0ZXVwLmd1aW0uY28u
+dWuCGXN1YnNjcmliZS50aGVndWFyZGlhbi5jb22CEXRoZWd1YXJkaWFuLmNvLnVr
+ghJ0aGVndWFyZGlhbi5kZXNpZ26CFm10YS1zdHMub2JzZXJ2ZXIuY28udWuCDiou
+d29yZGlwbHkuY29tggx3b3JkaXBseS5jb22CGXRoZWd1YXJkaWFuZm91bmRhdGlv
+bi5vcmeCD3RoZWd1YXJkaWFuLm9yZzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYw
+FAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBRBzDcKmJviWvxP9CT0VGr8
+I4n7vjBXBgNVHSAEUDBOMAgGBmeBDAECATBCBgorBgEEAaAyCgEDMDQwMgYIKwYB
+BQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMAwG
+A1UdEwEB/wQCMAAwgZ4GCCsGAQUFBwEBBIGRMIGOMEAGCCsGAQUFBzABhjRodHRw
+Oi8vb2NzcC5nbG9iYWxzaWduLmNvbS9jYS9nc2F0bGFzcjNkdnRsc2NhMjAyNHEz
+MEoGCCsGAQUFBzAChj5odHRwOi8vc2VjdXJlLmdsb2JhbHNpZ24uY29tL2NhY2Vy
+dC9nc2F0bGFzcjNkdnRsc2NhMjAyNHEzLmNydDAfBgNVHSMEGDAWgBRl4CpTHadH
+8Q0xgDxWeNvsUZesMzBIBgNVHR8EQTA/MD2gO6A5hjdodHRwOi8vY3JsLmdsb2Jh
+bHNpZ24uY29tL2NhL2dzYXRsYXNyM2R2dGxzY2EyMDI0cTMuY3JsMIIBfwYKKwYB
+BAHWeQIEAgSCAW8EggFrAWkAdwDd3Mo0ldfhFgXnlTL6x5/4PRxQ39sAOhQSdgos
+rLvIKgAAAZH6ey73AAAEAwBIMEYCIQCMFqu7cAlexb+T3Jdry9Pg6F22I4w0DkFp
+zQc2tyVveAIhAK4E66JuapdO0ov6TLL/DA03oh6buxKZ1dIoCplee/m2AHYADeHy
+MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGR+nsvcgAABAMARzBFAiEA
+178eIT/dltPYo/oPksDYAeFsCpp+CbIHhCXzryvutQoCIHiE9IeXhKsZ1u3RevQY
+NTbTvoefLFb4PZPw1JQV6RA/AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE
+6+WGJjoAAAGR+nsv3wAABAMARzBFAiBOrOgnzGBrn0VY82TRH/Ed1CS21gm3nb7v
+ohs3aUrYpwIhAPZxgJWuP/NFsGNBvjeLnr9pxfqmKv/HxB8G+SyNBVgrMA0GCSqG
+SIb3DQEBCwUAA4IBAQBJnHLCd1claXCNJa/iGKKEGQGiq4olAiK4W/GJ5iFqwHkx
+HZzbKm80SUmy9ju08elgup9WMVyjYS9VYMaHhuA16zvaGZvDGRBveWjzS83Ozlqi
+vRT58gGzc8jounl+j849UlPe9IcHNXbkIt5CnFPI+2mXZzzG/j9NNqYcteKb0gaP
+4DOc8kJznAGSRyG0QMGe4BnzkH6GeQaE0RMZ+eIWtTWPlnZMt+iiLxpMFfdOxVqt
+a60VcqRJ80AUALdpD5JGJV2c4c4fbK8aP2GyczipyExKrOmYvUm2JiBsGo8jzEeT
+feyc5ZJZSXZQzp/ZHbBFSLF0pj2KBXefpGiyJwLV
+-----END CERTIFICATE-----
+subject=CN=theguardian.com
+issuer=C=BE, O=GlobalSign nv-sa, CN=GlobalSign Atlas R3 DV TLS CA 2024 Q3
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4103 bytes and written 390 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: 44DCCBE0F669CB7FE7BCD081AE24AB8203661C8905AA34769B34C7591CDC37F4
+    Session-ID-ctx: 
+    Resumption PSK: 683E9F6A63CC53BC0F44287F35EED9C1490640F3F7C29D7EA7D272C6E15E1E4A
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 86400 (seconds)
+    TLS session ticket:
+    0000 - 92 12 c6 e8 60 2f 8a a4-b0 82 80 3b 9b e0 78 bc   ....`/.....;..x.
+    0010 - 43 48 c5 0e 1b 5f 64 2e-94 7a e7 a4 92 0a 27 38   CH..._d..z....'8
+    0020 - a0 20 93 40 c5 5b 72 65-03 6a f3 db 09 ae 11 9e   . .@.[re.j......
+    0030 - 3e 79 71 ae 4e e6 f7 1b-01 c4 c2 2c 0f b3 87 12   >yq.N......,....
+    0040 - fc 8d 07 8e 53 47 68 4f-3b 1d 28 61 b2 a2 d7 b9   ....SGhO;.(a....
+    0050 - 6c 69 ed 7b 0a 50 87 f1-ce 82 66 2e e0 18 4e a8   li.{.P....f...N.
+    0060 - 14 82 1d 34 96 ac 26 88-82 84 00 9a c5 0c 18 70   ...4..&........p
+    0070 - eb fe b2 9b 88 c9 b0 57-f9 85 e6 63 89 2a 39 b3   .......W...c.*9.
+    0080 - 65 60 9b 73 53 19 0d 24-aa 9c 36 6a 43 5a f6 da   e`.sS..$..6jCZ..
+    0090 - 35 3c e2 7b 64 00 c5 32-1d 76 66 dd f0 be e4 11   5<.{d..2.vf.....
+
+    Start Time: 1735028484
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+theguardian.com => 123894304
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=repubblica.it
+   i:C=US, O=Amazon, CN=Amazon RSA 2048 M03
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 24 00:00:00 2024 GMT; NotAfter: Nov 21 23:59:59 2025 GMT
+ 1 s:C=US, O=Amazon, CN=Amazon RSA 2048 M03
+   i:C=US, O=Amazon, CN=Amazon Root CA 1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Aug 23 22:26:04 2022 GMT; NotAfter: Aug 23 22:26:04 2030 GMT
+ 2 s:C=US, O=Amazon, CN=Amazon Root CA 1
+   i:C=US, ST=Arizona, L=Scottsdale, O=Starfield Technologies, Inc., CN=Starfield Services Root Certificate Authority - G2
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: May 25 12:00:00 2015 GMT; NotAfter: Dec 31 01:00:00 2037 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIF1jCCBL6gAwIBAgIQDKMMway3PRcwZAzzNKWwSTANBgkqhkiG9w0BAQsFADA8
+MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g
+UlNBIDIwNDggTTAzMB4XDTI0MTAyNDAwMDAwMFoXDTI1MTEyMTIzNTk1OVowGDEW
+MBQGA1UEAxMNcmVwdWJibGljYS5pdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAMhkzCRKudl5oxIPD8TCt57uQcUduMwN1XygqNhQsVOLPEw9PJldHZwN
+KBTE3QLoGYMrli9nvvG8mcrNL6oLa+PPaLGoAjniQ1zatqlQFrFVppykcpC2KjQe
+GLcBn7FM+ZiE/YyKk5JLxFyTPJT4Ir+68D6DgdBl4SMZAIQixYA3q3kIj13c1d/s
+zPGUee6+DgwBWN02CgeBXkpsx8hZmPPf8vMFR8u2I+ppEzuvn3v5Mb+x2r+5Nhs8
+0HYmxGs0VOifjshp/0VJ+3r3rRRvXDyxFaVhRWKBK+ObZR1fcqbOlGv5ZGrqvQQj
+eYmmsdhYBBwRwwE/IbKBj+JijIcEuFMCAwEAAaOCAvYwggLyMB8GA1UdIwQYMBaA
+FFXZGF/SHMwB4Vi0vqvZVUIB1y4CMB0GA1UdDgQWBBQOJSkXIkbyAvaDZ+tkUbqv
+dZjEFTArBgNVHREEJDAigg1yZXB1YmJsaWNhLml0ghF3d3cucmVwdWJibGljYS5p
+dDATBgNVHSAEDDAKMAgGBmeBDAECATAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYw
+FAYIKwYBBQUHAwEGCCsGAQUFBwMCMDsGA1UdHwQ0MDIwMKAuoCyGKmh0dHA6Ly9j
+cmwucjJtMDMuYW1hem9udHJ1c3QuY29tL3IybTAzLmNybDB1BggrBgEFBQcBAQRp
+MGcwLQYIKwYBBQUHMAGGIWh0dHA6Ly9vY3NwLnIybTAzLmFtYXpvbnRydXN0LmNv
+bTA2BggrBgEFBQcwAoYqaHR0cDovL2NydC5yMm0wMy5hbWF6b250cnVzdC5jb20v
+cjJtMDMuY2VyMAwGA1UdEwEB/wQCMAAwggF7BgorBgEEAdZ5AgQCBIIBawSCAWcB
+ZQB1ABLxTjS9U3JMhAYZw48/ehP457Vih4icbTAFhOvlhiY6AAABkr2Pq7YAAAQD
+AEYwRAIgK60YdOjgJOQmH+OmRAC4tt2qxp3VUElASV60n85M3bcCIB3WFXtVLx0F
+BQE2E5gjmOYBTdNy6QICs+1ABXSCOcE9AHUAzPsPaoVxCWX+lZtTzumyfCLphVwN
+l422qX5UwP5MDbAAAAGSvY+rQQAABAMARjBEAiBrAGb0DdFcq7a+RIu6nghlRU8r
+WolKzg16i84qyoLu1gIgUCDfcpVQMgMhJ72dAz+m5F50i+8o3wFnE//Qcmev760A
+dQAaBP9J0FQdQK/2oMO/8djEZy9O7O4jQGiYaxdALtyJfQAAAZK9j6yoAAAEAwBG
+MEQCIHYHuXD6IlbEJPVvRAzeszjE8uw21twuECP55E0cGUSAAiA3kXrO2ZI3fIXk
+HgytbPjdv6mBUC0UG+nlAfuOKeOKNzANBgkqhkiG9w0BAQsFAAOCAQEAllGOjnJ1
+WETBBtr+1Zy87DqjaGsa6LkxROnWaSqjoyeAbp38llSfUwR0MNjGMyNGKeX+cB1n
+vsb6gqtVMU43v5pEhZL6hclg+grSrURpgmeUxNkui04cxUg0uiWz5mcgvyj7Okmm
+lNdiSXyINmayNz1QLtaRPgR08nZj2oUvhpZhgR+Dk6Y0HVv3CsTq2OGjPL1wDWxC
+3C4F+bpe44874otVAjPCeupNheAgVh4cTNZed0TxrRGFI6TiGBfoyocohLNdWp3+
+Kyi1cK8D353GgFaGAoKU81XVwrSC1S4iWPSmgKQdzoUmU469sM6jkwobTz2X2WT9
+7d/J3L7fPN53hg==
+-----END CERTIFICATE-----
+subject=CN=repubblica.it
+issuer=C=US, O=Amazon, CN=Amazon RSA 2048 M03
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4348 bytes and written 388 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+repubblica.it => 86482951
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=huffingtonpost.it
+   i:C=US, O=Let's Encrypt, CN=E6
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Dec  4 17:57:38 2024 GMT; NotAfter: Mar  4 17:57:37 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=E6
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDoDCCAyWgAwIBAgISBIiPqAGgeQlgLzdJT7cbMvkyMAoGCCqGSM49BAMDMDIx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF
+NjAeFw0yNDEyMDQxNzU3MzhaFw0yNTAzMDQxNzU3MzdaMBwxGjAYBgNVBAMTEWh1
+ZmZpbmd0b25wb3N0Lml0MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEziqUq9R/KeD+
+9dA2nFHqLkASNtsVAThiIbtkwzHTuk7KOv6RPDVoWrB8L7eAMaYmx3Q6Nodkm4sE
+OxOMgcMhsnrokbm9HnrORjmIEYmLLGDQx5lkZGCs2KBro5kFYNmpo4ICEjCCAg4w
+DgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAM
+BgNVHRMBAf8EAjAAMB0GA1UdDgQWBBS4ycBSpgehgA64myOVOiQGJxc3lTAfBgNV
+HSMEGDAWgBSTJ0aYA6lRaI6Y1sRCSNsjv1iU0jBVBggrBgEFBQcBAQRJMEcwIQYI
+KwYBBQUHMAGGFWh0dHA6Ly9lNi5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0
+cDovL2U2LmkubGVuY3Iub3JnLzAcBgNVHREEFTATghFodWZmaW5ndG9ucG9zdC5p
+dDATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1
+AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABk5MHmIoAAAQDAEYw
+RAIgNkO/sLIVFwupvtuGQidPyroWW0K7FCUQi7OkzfYiJO8CIFPuCnw3girQ/VIS
+1DHZZ/pFYHEi9TP64GQez69G6p//AHYA5tIxY0B3jMEQQQbXcbnOwdJA9paEhvu6
+hzId/R43jlAAAAGTkweYjQAABAMARzBFAiEA9NLQUPzbI6TNnqRN5bPTStPHfz3f
+NcN6rpmn8/5qPlkCIGQikIjlHPuVJ+Dt2UTqQVQ+S6s828hfWKc3vzRF5O6IMAoG
+CCqGSM49BAMDA2kAMGYCMQDDo+Qty5wNJiigDtpRmBqYGPh7LwIMDH/nHXKDjZUj
+sx17lWS22wJ9mOPRn3/NrD8CMQCf1wzWM7YX6lNxw9K0DyHP59F/a+TBwykcrCCC
+3OAS6b+mIllAkPL1moQ9T1wTWMY=
+-----END CERTIFICATE-----
+subject=CN=huffingtonpost.it
+issuer=C=US, O=Let's Encrypt, CN=E6
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 2570 bytes and written 454 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-ECDSA-AES128-GCM-SHA256
+Server public key is 384 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-ECDSA-AES128-GCM-SHA256
+    Session-ID: 7F3374833FC12BFA31C6BCFA424BC4C49EB6FE18D3F3EC8D19CA8DAE010DCCDB
+    Session-ID-ctx: 
+    Master-Key: DA5BAC7CC5E66FD73369C85F03EE890CB8454BEDB52E880E62AB967DA50E2DFED1C2A9D8BF93FD2FE4A52874E77AE5BD
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 24 1c bb 23 fb 05 c4 40-6f 37 72 b6 65 25 a8 ef   $..#...@o7r.e%..
+    0010 - a1 89 d9 ce 68 fd 36 a7-7e be e4 e8 78 bf 47 2e   ....h.6.~...x.G.
+    0020 - 69 98 7a a7 67 0a bd f0-a8 76 01 3a 2e 6c 81 20   i.z.g....v.:.l. 
+    0030 - 01 ca 9c f1 5a a1 47 26-b7 0c 71 69 4e 4c 1f 9f   ....Z.G&..qiNL..
+    0040 - 8e 68 f2 2b 03 5d 30 1c-6d 2e c7 99 c6 21 95 fc   .h.+.]0.m....!..
+    0050 - d4 3a a9 11 8f 00 5c 08-c7 e1 d0 8c 14 d6 65 6e   .:....\.......en
+    0060 - 81 11 81 67 e1 23 f4 58-b7 56 1c fd 55 b5 cf 39   ...g.#.X.V..U..9
+    0070 - 82 a6 64 c3 9d fe 8c cc-d4 31 30 cf 4f 9c 23 cf   ..d......10.O.#.
+    0080 - ae 01 d2 bd 41 35 84 4a-3b aa 84 1d bb 40 85 6d   ....A5.J;....@.m
+    0090 - 2f 30 64 7a 67 92 94 06-71 7d 18 79 3e ac 04 5a   /0dzg...q}.y>..Z
+    00a0 - 7f 89 54 47 03 ba 06 26-98 de ce ea 36 f2 ff f9   ..TG...&....6...
+
+    Start Time: 1735028485
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+huffingtonpost.it => 269442781
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=quotidianolavoce.it
+   i:C=US, O=Let's Encrypt, CN=R10
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 19 07:30:28 2024 GMT; NotAfter: Feb 17 07:30:27 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R10
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIFDjCCA/agAwIBAgISBGDy5Hysmo6+jYr86OBsN/l9MA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTAwHhcNMjQxMTE5MDczMDI4WhcNMjUwMjE3MDczMDI3WjAeMRwwGgYDVQQD
+ExNxdW90aWRpYW5vbGF2b2NlLml0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEArI5l9a0K2M9X7iPCL7EP9Pn9E5pC8jjYOIL04JMGtaEW40hC3stLtD/R
+QQjMGDZqZvukSzhKuyJKUtrEqh0efLSV0ILpUVuovM6uGVy/0V9YKAI35CQJTxGX
+Nxa97V84YUhJiYF2mRM0kU5Leln8ZRfbwSUsLlBQSlQfOPj+/G4oKtzGs+ggiG7p
+xafUASL2PaffCq4zyEEeqc9ecF0YOI3HLluWAnBUJmw0lT/SOoZhzEj3LsKOq5Rb
+hIspMm8VT3U/K3TtMc7fm8J92LR0yuRwvP2adZM8NNeCbWxxyCptBfazDxzi3aWX
+Lm8uzu1Oh/gbEUciK0I5wNu0Qu4/2QIDAQABo4ICLzCCAiswDgYDVR0PAQH/BAQD
+AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA
+MB0GA1UdDgQWBBQjF4h9zLUT0a4TLeAZeZwmKY3MVTAfBgNVHSMEGDAWgBS7vMNH
+peS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGGFmh0
+dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTAuaS5s
+ZW5jci5vcmcvMDcGA1UdEQQwMC6CE3F1b3RpZGlhbm9sYXZvY2UuaXSCF3d3dy5x
+dW90aWRpYW5vbGF2b2NlLml0MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYB
+BAHWeQIEAgSB9ASB8QDvAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzEuVCk
+R+cAAAGTQ4oCYAAABAMARzBFAiEA2STgI15vzJF4MW8XlpyEl7vlTZaQa+71Gxr1
+exKL9fICICOWIPh6g46QeosGUZpjkH7XxpBIAtXjt+tRko12JMXeAHUAE0rfGrWY
+Qgl4DG/vTHqRpBa3I0nOWFdq367ap8Kr4CIAAAGTQ4oLLQAABAMARjBEAiBNyGjN
+C0T5Dpi8ohSRPgXrCFOhB1bc8rRh5IT8mb1u1wIgIyDbt2bYPF3JM1GVNI8KCEoL
+MmVwfbEycjBVtcsTLbMwDQYJKoZIhvcNAQELBQADggEBADefx1YbTLvPfEmIqz66
+Qd5IwD9JAxrTQxae94ZY1hNC+giRdr1LvbKET633XHaLmXoj3Z4BjqkvLE94TsDJ
+dXtK+c/EbazHnAMDA4WaqbAKrtDgPAEGagK2NktkwGImK/u3ArQDoMOmWwSHJHZq
+ZZNL3NXU35pnRjupIWkYOaJ52Jwk6SDoZHRYOICpn3f4B5kAFjbRFuvuIypjK+qD
+sl0GGXh9a/lxLTHnAtDUR4mnLvhHAGiGo2Qr57qwyX1hxvJseWduPgDFlip0gp02
+joMhbd4I39vYqmUMz7fJh2fRBIX+Tl2+gTc4r25VeNG1+dAwEPEBII7Kxj0moZwe
+3sk=
+-----END CERTIFICATE-----
+subject=CN=quotidianolavoce.it
+issuer=C=US, O=Let's Encrypt, CN=R10
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3152 bytes and written 410 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+quotidianolavoce.it => 661609322
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=baraondanews.it
+   i:C=US, O=Google Trust Services, CN=WE1
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Dec 17 23:10:52 2024 GMT; NotAfter: Mar 18 00:06:16 2025 GMT
+ 1 s:C=US, O=Google Trust Services, CN=WE1
+   i:C=US, O=Google Trust Services LLC, CN=GTS Root R4
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+ 2 s:C=US, O=Google Trust Services LLC, CN=GTS Root R4
+   i:C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 15 03:43:21 2023 GMT; NotAfter: Jan 28 00:00:42 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDsTCCA1egAwIBAgIRANWs0Vymen9RDnaQBGReUXEwCgYIKoZIzj0EAwIwOzEL
+MAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEMMAoG
+A1UEAxMDV0UxMB4XDTI0MTIxNzIzMTA1MloXDTI1MDMxODAwMDYxNlowGjEYMBYG
+A1UEAxMPYmFyYW9uZGFuZXdzLml0MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE
+6Lz81IAS+irGNq8JMmDj9LtPYBPg+61Rc85b8QeAeuRCTLCTTS01GjZYD6GM6E/T
+oUYA/9LC2uMgOB4YXBn0wKOCAlswggJXMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUE
+DDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQ0gVuO8aLfx8Bq
+1hqjZaZKlCdRZDAfBgNVHSMEGDAWgBSQd5I1Z8T/qMyp5nvZgHl7zJP5ODBeBggr
+BgEFBQcBAQRSMFAwJwYIKwYBBQUHMAGGG2h0dHA6Ly9vLnBraS5nb29nL3Mvd2Ux
+LzFhdzAlBggrBgEFBQcwAoYZaHR0cDovL2kucGtpLmdvb2cvd2UxLmNydDAtBgNV
+HREEJjAkgg9iYXJhb25kYW5ld3MuaXSCESouYmFyYW9uZGFuZXdzLml0MBMGA1Ud
+IAQMMAowCAYGZ4EMAQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jLnBraS5n
+b29nL3dlMS9qa0lqRGtEcUZCYy5jcmwwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAA
+dgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAZPXGmjJAAAEAwBH
+MEUCIEtKJ2e+oaaHE8MvKupL8odlAwPT0fnNybY0q+U5LyDtAiEAn+LphIHgthL/
+wXJdOlbYWdXP6LsrthaKL1WIVvox+54AdgDPEVbu1S58r/OHW9lpLpvpGnFnSrAX
+7KwB0lt3zsw7CAAAAZPXGmjeAAAEAwBHMEUCICuim+TJAtJlPRcpAmKYPxOVAhHl
+vXTTQLtApUD3Wom3AiEA3i5Nxvc5m9JcQn0QDYqsmXRx7G2BZAF1gNs7Puc+R3ow
+CgYIKoZIzj0EAwIDSAAwRQIgdQiqutROFPE9gMsRqzp3ZCCuNamSrox235vZGisO
+EpsCIQCmrrW7tDspfHUkR5ws0q4x20wobTTQP0IIg/wb88ianw==
+-----END CERTIFICATE-----
+subject=CN=baraondanews.it
+issuer=C=US, O=Google Trust Services, CN=WE1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2836 bytes and written 406 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+baraondanews.it => 170123645
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=Massachusetts, L=Cambridge, O=Massachusetts Institute of Technology, CN=web.mit.edu
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust RSA CA 2018
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 12 00:00:00 2024 GMT; NotAfter: Jun 28 23:59:59 2025 GMT
+ 1 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust RSA CA 2018
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root CA
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  6 12:23:45 2017 GMT; NotAfter: Nov  6 12:23:45 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIII3zCCB8egAwIBAgIQA/zVws9nMZ9007Z9lbIWxjANBgkqhkiG9w0BAQsFADBe
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRHZW9UcnVzdCBSU0EgQ0EgMjAxODAe
+Fw0yNDExMTIwMDAwMDBaFw0yNTA2MjgyMzU5NTlaMH8xCzAJBgNVBAYTAlVTMRYw
+FAYDVQQIEw1NYXNzYWNodXNldHRzMRIwEAYDVQQHEwlDYW1icmlkZ2UxLjAsBgNV
+BAoTJU1hc3NhY2h1c2V0dHMgSW5zdGl0dXRlIG9mIFRlY2hub2xvZ3kxFDASBgNV
+BAMTC3dlYi5taXQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+tN3o5GuWHmMuO3bJhXM8TOdCozimS7dxMjWQwSZQdg1pUH5M4/aIio3D4WIoZg2w
+gEonSUKNO6oNWN8XkHc0K6+N4tFTivp2yK2dbwurxtWNHA9Od0M6AurYlFfAZ/Mp
+w9OKlzBWumz55kpKJFhPRssxBrgLvAzW1oKSIkIomGGXlorEwebRbtiT+92qoJJ8
+jeztjiLHqyO+mEC8oDPoM5mR72Y0Oke8cJxDr8iLGLUYXq9YG1K4YZaAAymT6zFY
+aN4TX+0YaCQsUK2T+oZD5cRLupCfq5L5sy84NfJv4sO8dmKa8+NcX4h7SplO3Ztv
+RTuH0bsh9XZJf8GuvEuNWQIDAQABo4IFdjCCBXIwHwYDVR0jBBgwFoAUkFj/sJx1
+qFFUd7Ht8qNDFjiebMUwHQYDVR0OBBYEFGp9mD7NOtkl9YWTlJhj7RMFeeEZMIIC
+eQYDVR0RBIICcDCCAmyCC3dlYi5taXQuZWR1ghBhbHVtLWRldi5taXQuZWR1ggxh
+bHVtLm1pdC5lZHWCE2JldHRlcndvcmxkLm1pdC5lZHWCFWVtZXJnZW5jeS1kZXYu
+bWl0LmVkdYIRZW1lcmdlbmN5Lm1pdC5lZHWCEWVtZXJnZW5jeS5taXQubmV0ghVl
+dmVudHMtc3RhdGljLm1pdC5lZHWCEmdpdmluZy1kZXYubWl0LmVkdYIOZ2l2aW5n
+Lm1pdC5lZHWCC2ltZy5taXQuZWR1ggdtaXQuZWR1ggttaXQubWl0LmVkdYIQbWl0
+cHJlc3MubWl0LmVkdYIZbWl0cHJlc3Nib29rc3RvcmUubWl0LmVkdYIMbmV3cy5t
+aXQuZWR1ghJuZXdzb2ZmaWNlLm1pdC5lZHWCGHN0YWdpbmctbWl0cHJlc3MubWl0
+LmVkdYIYc3dhcnR6LWRvY3VtZW50cy5taXQuZWR1ghVzd2FydHotcmVwb3J0Lm1p
+dC5lZHWCInRoZXJlYWRlci1zdGFnaW5nLm1pdHByZXNzLm1pdC5lZHWCGnRoZXJl
+YWRlci5taXRwcmVzcy5taXQuZWR1ggl3Lm1pdC5lZHWCCnczLm1pdC5lZHWCEHdl
+Yi1jZXJ0Lm1pdC5lZHWCEXdlYi1mb3Jtcy5taXQuZWR1ggd3ZWIubWl0ghB3d3ct
+Y2VydC5taXQuZWR1gg93d3ctbWl0Lm1pdC5lZHWCB3d3dy5taXSCC3d3dy5taXQu
+ZWR1ghZ3d3cubmV3c29mZmljZS5taXQuZWR1gg93d3cud2ViLm1pdC5lZHWCDHd3
+d3cubWl0LmVkdTA+BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhto
+dHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1Ud
+JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA+BgNVHR8ENzA1MDOgMaAvhi1odHRw
+Oi8vY2RwLmdlb3RydXN0LmNvbS9HZW9UcnVzdFJTQUNBMjAxOC5jcmwwdQYIKwYB
+BQUHAQEEaTBnMCYGCCsGAQUFBzABhhpodHRwOi8vc3RhdHVzLmdlb3RydXN0LmNv
+bTA9BggrBgEFBQcwAoYxaHR0cDovL2NhY2VydHMuZ2VvdHJ1c3QuY29tL0dlb1Ry
+dXN0UlNBQ0EyMDE4LmNydDAMBgNVHRMBAf8EAjAAMIIBfQYKKwYBBAHWeQIEAgSC
+AW0EggFpAWcAdQDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3zsw7CAAAAZMh
+oJF5AAAEAwBGMEQCIENECZcSD6eSGyOJV8r2T5pOT2bba2PgDxkhYEh4wRXfAiAb
+iwyvdr3im5dM36qKz0NUypbINvBMAyMJVS95WtrleAB2AObSMWNAd4zBEEEG13G5
+zsHSQPaWhIb7uocyHf0eN45QAAABkyGgkYIAAAQDAEcwRQIhALfhX1BJKXUT8Uwk
+Myz8UUd5qCEFJvIa6VAlQPfZnfX3AiB5tQIRe0ttSCH6TrPDYMQ4Cw1NPazDCCYC
+LeDIABuf8AB2AMz7D2qFcQll/pWbU87psnwi6YVcDZeNtql+VMD+TA2wAAABkyGg
+kdAAAAQDAEcwRQIgLgzUE1FaaXlvH2+nFGKTwvuagsVH5dm3WhFuvljC8JcCIQC6
+9XwTtoRc+v/f10c//Axzh7IRPe1K27M7+qgo9E12RzANBgkqhkiG9w0BAQsFAAOC
+AQEANqQgLxAfLO1QLqLwL4mTrBu1YMIEid9sMIztqaiSuyAZ52elRMrSV3ksvp+f
+yPE+TnD+O+MEs5UkmB14Ro3QL9CANJuVl66ZWaF9cCtp8cK+j0mFmT3jasu4YCsh
+rfG+UnzM9zNj1yrAUTXwfeKuJh/xeWilaVbAIXBdDhNVBU61eRnlXGKhmF7yCh7W
+UpAys2PYFNvQ4fDTcOrpr2+rCPofSlx9HdM1eETJymv1fLYCN92X5FhnohRfmugx
+Ne6/5BMo4Eujskv9+Q3/sJq+7f9hTjJNmIfrCTd5LQGXPyAmv9YWyvWRP7JI67vY
+Y2NnZ8Uh547KL/kB7EJwMWosDA==
+-----END CERTIFICATE-----
+subject=C=US, ST=Massachusetts, L=Cambridge, O=Massachusetts Institute of Technology, CN=web.mit.edu
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust RSA CA 2018
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 4119 bytes and written 444 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: ED33A0B46A896F2A5B0C00D3B313210E7DDCE88451E9D6D1CBFEBFD872BA6EBF
+    Session-ID-ctx: 
+    Master-Key: 6DB94C28C291B26D4157511090EBFC6DF55038E56E642DB9E4E6C229C0614FF00D62968E4E1885261736F6851D281259
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 83100 (seconds)
+    TLS session ticket:
+    0000 - 00 00 25 5e e6 1a c5 99-1d 9e 6e 3d 22 df af 2b   ..%^......n="..+
+    0010 - 88 4b f8 eb 2e 49 0f 54-6b 5b a7 89 61 ed 9b 21   .K...I.Tk[..a..!
+    0020 - fb 56 d8 0a 7d 2d ac cc-bc c9 07 cc a9 32 c6 af   .V..}-.......2..
+    0030 - 63 5b 5f 9f 03 67 46 98-48 69 d1 25 f4 57 93 af   c[_..gF.Hi.%.W..
+    0040 - 5e 4d f4 2f ef df 31 ba-0e ac d4 47 cb 37 31 35   ^M./..1....G.715
+    0050 - f6 10 c4 56 3e f6 16 d7-50 9e d4 1b 4a 09 b5 0e   ...V>...P...J...
+    0060 - 95 61 4c 4c e1 63 34 a6-09 e6 c2 69 cb 1d ae 4e   .aLL.c4....i...N
+    0070 - af 21 a4 0b a8 5c 63 68-60 c3 79 56 a7 66 15 cb   .!...\ch`.yV.f..
+    0080 - 71 ad 41 ba c2 2a c1 a5-f2 6f 66 03 5e b6 b9 52   q.A..*...of.^..R
+    0090 - 1e d9 33 a5 c7 75 f9 5f-32 a5 96 c4 e5 18 ae 0c   ..3..u._2.......
+    00a0 - 59 74 e5 c7 aa 80 f6 2e-91 5b a8 1c 0c 32 a7 ed   Yt.......[...2..
+
+    Start Time: 1735028486
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+mit.edu => 1040751680
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=California, O=Stanford University, CN=stanford.edu
+   i:C=US, O=Internet2, CN=InCommon RSA Server CA 2
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA384
+   v:NotBefore: May  1 00:00:00 2024 GMT; NotAfter: May  1 23:59:59 2025 GMT
+ 1 s:C=US, O=Internet2, CN=InCommon RSA Server CA 2
+   i:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   a:PKEY: rsaEncryption, 3072 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Nov 16 00:00:00 2022 GMT; NotAfter: Nov 15 23:59:59 2032 GMT
+ 2 s:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   i:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Feb  1 00:00:00 2010 GMT; NotAfter: Jan 18 23:59:59 2038 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIG/DCCBWSgAwIBAgIQE/LbCWRO84N/fqh1eKxetDANBgkqhkiG9w0BAQwFADBE
+MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv
+bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNTAxMDAwMDAwWhcNMjUwNTAxMjM1
+OTU5WjBXMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEcMBoGA1UE
+ChMTU3RhbmZvcmQgVW5pdmVyc2l0eTEVMBMGA1UEAxMMc3RhbmZvcmQuZWR1MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQB0zVV4PyKmkL4YFWUYlZS5
+XYQ4MeBLXnvmkeCa5njAx684VRNbDk7HivroAQQiUSXASZLJL3+W6LLaFhJ9ZQmV
+61Ea5XwZ9P5T6+Grpf8vKtYdC94gBfwxkAsIt+fWfrcS5O+r0tCUxlYfTb2iNunN
+Y3lOLXQY2ix+ohNATOWkWDg5SKWj7tKAPcwSmO+5t2eSlNg0N6pcR+Ik9qi65lEm
+CdbFTqBGFJClH10yOvIOEpDbwJTkbRgnd2lCjD3W0h3IrUBIGZPJDs/au1MR4Eeg
+SoVopwSGHL+0Pg3qQeImiFNjmnnizSvNcfy34RDfK/9bEbm0aoRIQlJpZ7gulwID
+AQABo4IDVTCCA1EwHwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYD
+VR0OBBYEFJ9jMAybLH1jfakSfvbVjPWRMKF+MA4GA1UdDwEB/wQEAwIFoDAMBgNV
+HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE
+QjBAMDQGCysGAQQBsjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln
+by5jb20vQ1BTMAgGBmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3Js
+LnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcB
+AQRkMGIwOwYIKwYBBQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21t
+b25SU0FTZXJ2ZXJDQTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0
+aWdvLmNvbTCCAYEGCisGAQQB1nkCBAIEggFxBIIBbQFrAHcAzxFW7tUufK/zh1vZ
+aS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGPNRImLgAABAMASDBGAiEAp+ZBwIAKeQbb
++wbJqO3tLuX2Vh50+/2MqZYX3K/RG1ECIQDVJIAij+vJnMgAdTKRGqp34H5HhNDd
+2SL1OBq2cqKsZgB3AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAAB
+jzUSJhAAAAQDAEgwRgIhAJKFHSQCP1RiZF5Fre7rwf+bz8iiKQofyHQ/R7fMrHg5
+AiEA+fCpilCLMmAQTIg2TVRQo2qD+7oC+rDOVWbbQcLWNEUAdwBOdaMnXJoQwzhb
+bNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY81EiYPAAAEAwBIMEYCIQCfQEcWEg+E
+HbrbSWTaCoIJ8pNUDxWRHA2ZnC5ummyZOAIhAPROUUGM7ft9ITpHVkYcU+It5gLc
+eroPlCau/bPrDa3YME4GA1UdEQRHMEWCDHN0YW5mb3JkLmVkdYIOKi5zdGFuZm9y
+ZC5lZHWCEHdlYi5zdGFuZm9yZC5lZHWCE3d3dy12Ni5zdGFuZm9yZC5lZHUwDQYJ
+KoZIhvcNAQEMBQADggGBACzoXvHDXswdwuu9XmPUrLwkTLIdWHEl4/Gy7ueyFd9/
+2HAid1QU3bS66yuoJqgDUEed8HsiyyQ/nunNyc2mewNSBMhBG37hZGyjvp2WzK/h
+PfW/EchwXCRbkXelWMnAjvambOnFNlngPhGKqRWDJmF2y0ty7UdBhhQo6iZ3dVSo
+vtorkKiIZj+58nsoIt0wmvvtFalqfO5SgonBZ/WxsQasvOemdcqivYleuW9xBtId
+05IkbyCITr18HHD7l50Wjo7cnwDlIqfk0nIXGQLuBjf4r8t0mSUuHMS2mR1HVef3
+nNv4/tHlcEZwehP2/fSoz0v6mnGGiQTjFlSCIQHKchgbcceb6NchmxDepzyoo3O3
+xnFqMgFX3eOAgi7d7JDHifmlJqugf40xm/Tt5vTOozpx+zyFqDkenwyP5TapZXo+
+1ytloWpndqMwi4VphbSsr4LphubGh+bCuYtsmb9Fp+vMN7a7tNYLZtOk7QfSztia
+OonqR7ixK1xDEW3E7aH2cA==
+-----END CERTIFICATE-----
+subject=C=US, ST=California, O=Stanford University, CN=stanford.edu
+issuer=C=US, O=Internet2, CN=InCommon RSA Server CA 2
+---
+No client certificate CA names sent
+---
+SSL handshake has read 5083 bytes and written 641 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : AES128-GCM-SHA256
+    Session-ID: F6DC99168A614C3A5F256CA873297443FDC64BCC8C9E9EA239C8FAC842B9C453
+    Session-ID-ctx: 
+    Master-Key: 04EDFABF14713CE6768E46302AC3133AD3D6820973E828749FF6351C5660FCACE8AAAB60E26763DCA78723E84A916DEA
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1735028487
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
+stanford.edu => 912750222
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=IT, ST=Roma, O=UNIVERSITA' DEGLI STUDI DI ROMA LA SAPIENZA, CN=uniroma1.it
+   i:C=NL, O=GEANT Vereniging, CN=GEANT OV RSA CA 4
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Apr 29 00:00:00 2024 GMT; NotAfter: Apr 29 23:59:59 2025 GMT
+ 1 s:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA1
+   v:NotBefore: Jan  1 00:00:00 2004 GMT; NotAfter: Dec 31 23:59:59 2028 GMT
+ 2 s:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   i:C=GB, ST=Greater Manchester, L=Salford, O=Comodo CA Limited, CN=AAA Certificate Services
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Mar 12 00:00:00 2019 GMT; NotAfter: Dec 31 23:59:59 2028 GMT
+ 3 s:C=NL, O=GEANT Vereniging, CN=GEANT OV RSA CA 4
+   i:C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA384
+   v:NotBefore: Feb 18 00:00:00 2020 GMT; NotAfter: May  1 23:59:59 2033 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIHaTCCBVGgAwIBAgIRAOH5EJaXiQQQTk+DZnKSIckwDQYJKoZIhvcNAQEMBQAw
+RDELMAkGA1UEBhMCTkwxGTAXBgNVBAoTEEdFQU5UIFZlcmVuaWdpbmcxGjAYBgNV
+BAMTEUdFQU5UIE9WIFJTQSBDQSA0MB4XDTI0MDQyOTAwMDAwMFoXDTI1MDQyOTIz
+NTk1OVowaDELMAkGA1UEBhMCSVQxDTALBgNVBAgTBFJvbWExNDAyBgNVBAoTK1VO
+SVZFUlNJVEEnIERFR0xJIFNUVURJIERJIFJPTUEgTEEgU0FQSUVOWkExFDASBgNV
+BAMTC3VuaXJvbWExLml0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+5h49XWOuRe9NgFtzhYtWzdev3Mw4InTFxVjDouyWyQ/7PScNZNCSgDF9SVWXcg7s
+lc0mOpswS1c0jWvLT5Een1Aatj9CYZ2tB5TSuIX39gi//7xqNULIqOhln+bwJOH+
+QJqncLeEpBFBI9EGdUvP3hpUtT3BTurAbfzl0mq64njLfKA11tXHQadyA+NjWux/
+hUp3EPhxaMVSF533O6nwL1vfLsaJnOgNvQJ7gIOeLGPpyPV4OncJRP66L8aRcHfp
+TRzzozfYct5RBfEWFa5z2bNAW1DGEJ1FPg7SXjCqtYnUAB9QsRATkufca0rY9ezp
+DN/gndac888VFGkPmkZxoQIDAQABo4IDMDCCAywwHwYDVR0jBBgwFoAUbx01SRBs
+MvpZoJ68iugflb5xegwwHQYDVR0OBBYEFKIQTFkOwXFOywQxf1XPcXddhslkMA4G
+A1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMB
+BggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJPMCUwIwYIKwYBBQUH
+AgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjA/BgNVHR8EODA2
+MDSgMqAwhi5odHRwOi8vR0VBTlQuY3JsLnNlY3RpZ28uY29tL0dFQU5UT1ZSU0FD
+QTQuY3JsMHUGCCsGAQUFBwEBBGkwZzA6BggrBgEFBQcwAoYuaHR0cDovL0dFQU5U
+LmNydC5zZWN0aWdvLmNvbS9HRUFOVE9WUlNBQ0E0LmNydDApBggrBgEFBQcwAYYd
+aHR0cDovL0dFQU5ULm9jc3Auc2VjdGlnby5jb20wggF/BgorBgEEAdZ5AgQCBIIB
+bwSCAWsBaQB3AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABjylo
+X70AAAQDAEgwRgIhAITukKPECs1Rn9jLMpUEZeYO9HfGQkAO+LviWsZh6mCfAiEA
+2172dzk83oxVDua+aSAk6blVIHNOK5AUJK6mBtZx1FYAdgCi4wrkRe+9rZt+OO1H
+Z3dT14JbhJTXK14bLMS5UKRH5wAAAY8paF9+AAAEAwBHMEUCICaTZJg/FMWZe6JF
+5YfxZQ3GKXOhcQd/CUh6SXoz7RjUAiEA29mw85YNdMqOH8JgXhA9sacdmNcwyX0o
+RE0wqen/Q8QAdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY8p
+aF9eAAAEAwBHMEUCIQCAAc01JyIjzVESf6zzmQixENjrP0lo5arQbTE1FWAQDwIg
+QlNRIMEoCBypjRTHTTqlj1C1IzQ8URoxbARL7n1QJwowJwYDVR0RBCAwHoILdW5p
+cm9tYTEuaXSCD3d3dy51bmlyb21hMS5pdDANBgkqhkiG9w0BAQwFAAOCAgEAF/jo
+Kg5rv5ThI6HVuKpM3qLxF9a5WVJEI3ngbCVoQkuc+VsVhZFeU5Xh5WsUYwzTck5D
+CVqJKgXZI55R29hA5lZjLgS80PpnHmRMyIsngM+tRPRjVmwAfyopvP5DArMnzd97
+iTOYp3qVndGjXDelXpS8Dlc8Dv+UZzmV6AiTC+Ae6qw4quutRsaPUOOAesAq5u5+
+ODTKdnpNEQ7M8AknZ5RS+vkzOcUBBYwkImGUhJ69WJxKgCd6lB5Z5PPVURzZDn5s
+b92oQj5pKmffPfX0JYcQ9X3WpwqrS+JrLxS0NAuJZw3kRHUsss58JkwoseDbEIfc
+luqHliONdYkfSOvcSHpsAMPmBn2/Ov9o5zzSpJnroyxmao/T0bTfYDEa3q+f/l6P
+rQNwDzFsTowzUTqowVIINwPGU3TKZg8vITdQi50CjdyxfDvz0jVFg/DTLwjerx1E
+erx/rxfRJ+jY+ym802xUdmhazRFVnbpcMMmocAUr/EbWXpXraQiY6hLD2aDkVRUX
+Ydaem9Y0v6KHVtE9+LUXZW4R4gxWC7Jd6pstMuM+NHehF8eh8XAoIDhNR7UM0iiV
+r0QbrtUgLOjn1IsxIghtOJdPRfdD4djLSQxG5ohPLUf0KQLuC7Y/il/i3KO9wukk
+OjWMDGBt3X3yBQIxOmNgBq8jJFZL9RHixKbPPc8=
+-----END CERTIFICATE-----
+subject=C=IT, ST=Roma, O=UNIVERSITA' DEGLI STUDI DI ROMA LA SAPIENZA, CN=uniroma1.it
+issuer=C=NL, O=GEANT Vereniging, CN=GEANT OV RSA CA 4
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: ECDH, secp384r1, 384 bits
+---
+SSL handshake has read 6892 bytes and written 480 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: F07E96B63DE7F752C836E58B30B4AFBEAFF91E5C150B0CE7D4723AEED2FC0BBF
+    Session-ID-ctx: 
+    Master-Key: D5690DD076C3F55D1DA29F194452586877F3DD1ED77549A68155262F48BA4AB7EDC5995D7AC22FB419FF75FE622549AC
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 600 (seconds)
+    TLS session ticket:
+    0000 - 3b 1e d3 fa b5 18 ec 41-21 73 18 10 da 52 23 e8   ;......A!s...R#.
+    0010 - 3d dd 27 66 b2 14 34 23-be 43 b7 f9 48 b0 7d 8c   =.'f..4#.C..H.}.
+    0020 - 91 64 60 ae cc 57 ce c3-e8 3f e2 5c ec 73 67 51   .d`..W...?.\.sgQ
+    0030 - c4 b1 fe 0a 6e c1 32 1f-f7 f5 b4 0f 0e 38 f8 7d   ....n.2......8.}
+    0040 - b8 9f 68 76 cd e8 98 df-6f 5d 90 76 10 47 4a f9   ..hv....o].v.GJ.
+    0050 - 3b d6 43 cf 08 bd 6b ed-66 55 12 7a c6 e6 ba ad   ;.C...k.fU.z....
+    0060 - c4 87 63 f8 63 74 26 45-90 68 0e 43 8f ad 22 5c   ..c.ct&E.h.C.."\
+    0070 - e8 25 47 95 80 f6 6a 61-2e a6 97 08 41 f9 92 19   .%G...ja....A...
+    0080 - d7 98 da 38 16 ef 44 2c-10 ab f1 6b 99 9e e2 ba   ...8..D,...k....
+    0090 - 67 cf 43 ec 8d ad 70 0c-d7 30 bd 2c ff be 2b 48   g.C...p..0.,..+H
+    00a0 - 23 3a fe 03 e8 e1 98 84-32 7e 8f 51 59 df d7 8f   #:......2~.QY...
+    00b0 - ad 83 e7 2a 17 d6 a7 ff-7a d7 94 cb 61 d3 47 2c   ...*....z...a.G,
+
+    Start Time: 1735028488
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+uniroma1.it => 137912714
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=*.unicusano.it
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=RapidSSL TLS RSA CA G1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Sep  9 00:00:00 2024 GMT; NotAfter: Oct  7 23:59:59 2025 GMT
+ 1 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=RapidSSL TLS RSA CA G1
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov  2 12:24:33 2017 GMT; NotAfter: Nov  2 12:24:33 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGKzCCBROgAwIBAgIQCfQ6wPqaNZBQvZWHRrqSTjANBgkqhkiG9w0BAQsFADBg
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR8wHQYDVQQDExZSYXBpZFNTTCBUTFMgUlNBIENBIEcx
+MB4XDTI0MDkwOTAwMDAwMFoXDTI1MTAwNzIzNTk1OVowGTEXMBUGA1UEAwwOKi51
+bmljdXNhbm8uaXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCz6Lt9
+Uur0IHTpFiZ/j9teGS14+KK2c0LGWcrAV2bJzZh0HUmO00P6sBPG4MVpdruXL6C2
+JtdXNvp3CcKci+l+2CYAJmHXddfBUhAHmOUiOMH6f1foyWW4b9VZf+5Wx9y7eD+T
+nn5BVxVqz0o40LmXfLCfLQ3eTS2I84quXaJNgv/STMKzu7JdK9lyTqI3xZWJO2sr
+kY1t3zF69R7R+WCvnGpvZMrmh/ldMHW/7WblYQaEu3BoG1L+y89nIYlMhAVFt5A2
+H48Wcb4e5mv92HVeBDMrKfzTba/8Nw74rUOFfF7f+HfFSI1/8ebUUtbI4UrpyK4t
+tk0Wilc3bnUJEBIfAgMBAAGjggMmMIIDIjAfBgNVHSMEGDAWgBQM22yCSQ9KZwq4
+FO56xEhSiOtWODAdBgNVHQ4EFgQUFECP1IZ6NsGa6o/WVESEZeI5rk0wJwYDVR0R
+BCAwHoIOKi51bmljdXNhbm8uaXSCDHVuaWN1c2Fuby5pdDA+BgNVHSAENzA1MDMG
+BmeBDAECATApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9D
+UFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
+AjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY2RwLnJhcGlkc3NsLmNvbS9SYXBp
+ZFNTTFRMU1JTQUNBRzEuY3JsMHYGCCsGAQUFBwEBBGowaDAmBggrBgEFBQcwAYYa
+aHR0cDovL3N0YXR1cy5yYXBpZHNzbC5jb20wPgYIKwYBBQUHMAKGMmh0dHA6Ly9j
+YWNlcnRzLnJhcGlkc3NsLmNvbS9SYXBpZFNTTFRMU1JTQUNBRzEuY3J0MAwGA1Ud
+EwEB/wQCMAAwggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB2AN3cyjSV1+EWBeeV
+MvrHn/g9HFDf2wA6FBJ2Ciysu8gqAAABkdcSqVYAAAQDAEcwRQIgdAOTu1yk4vAy
+0C/2z6AEgC2W3xiDD2JivtkzzDoZY/ECIQCU6sUBMMog32TbMa9McKiWmANe8Lky
+8qDDCOTj+ETMpAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocyHf0eN45QAAAB
+kdcSqWgAAAQDAEgwRgIhAM55ob69/PoMuCsZzSs+X3wN0ng/ihvPXenfws5+jTgx
+AiEAjB+/i485u5WITfZNlHbC7uiFj0lLfleZAlENedoEmI8AdgDM+w9qhXEJZf6V
+m1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAZHXEqlYAAAEAwBHMEUCIGR81lO1/UTY
+j+k491/Nq+Bujbjqkc2LOjIxCWwMaQHUAiEA6VLduXyWB5B7/4lxtMZCm4v6ye+W
+HyWcWDJEcGJGuW8wDQYJKoZIhvcNAQELBQADggEBAEhiMcD6cZ1xMOPXUdDkh6cv
+KsSW6b+scL+KMalasbCmMpUnvxvm4tai+LstFYyCbODKzBCONTnuJtjzopK6UBUM
+xfOw00RIHKGoTSjMQDOZmqmWxDueQNk9VCVkr+vaDNojwsNtCIc9opxA45BcNBtP
+fBRMiS+hVGrmoKTu/TOjY3CBBvkd6FiGIECsekWAFMkJUQOqGr7m0cgu/pkgKxMy
+W4L2A2UYPvP4qEwLMw1tuJL6XZU/FgL4498mcnl2rvsnAgYxkbEW/Kk1WMjK7+QZ
+ls9jsSSTYwFRshV6IV9ViOU4eXHdyS0scY1mUM8ARPL8F7hb9dUxu9Ex8+OEaAQ=
+-----END CERTIFICATE-----
+subject=CN=*.unicusano.it
+issuer=C=US, O=DigiCert Inc, OU=www.digicert.com, CN=RapidSSL TLS RSA CA G1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3339 bytes and written 387 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+unicusano.it => 81213441
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=chiaveorgonica.it
+   i:C=US, O=Google Trust Services, CN=WE1
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Oct 28 15:25:32 2024 GMT; NotAfter: Jan 26 15:25:31 2025 GMT
+ 1 s:C=US, O=Google Trust Services, CN=WE1
+   i:C=US, O=Google Trust Services LLC, CN=GTS Root R4
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+ 2 s:C=US, O=Google Trust Services LLC, CN=GTS Root R4
+   i:C=BE, O=GlobalSign nv-sa, OU=Root CA, CN=GlobalSign Root CA
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 15 03:43:21 2023 GMT; NotAfter: Jan 28 00:00:42 2028 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDtjCCA1ugAwIBAgIQGrRnL+sWLCQNusdXAQdmCDAKBggqhkjOPQQDAjA7MQsw
+CQYDVQQGEwJVUzEeMBwGA1UEChMVR29vZ2xlIFRydXN0IFNlcnZpY2VzMQwwCgYD
+VQQDEwNXRTEwHhcNMjQxMDI4MTUyNTMyWhcNMjUwMTI2MTUyNTMxWjAcMRowGAYD
+VQQDExFjaGlhdmVvcmdvbmljYS5pdDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+BEPY8F5TkXidPRkII4UZ/nwwJcHExgOMKMflIc+TnGzEVvnn199KJqD0Rr0S99Hl
+vBAX6Qv0WCOErCfArkYIaGujggJeMIICWjAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0l
+BAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQURPoPQ3fziAJE
+HxemkBhrP3vBnhkwHwYDVR0jBBgwFoAUkHeSNWfE/6jMqeZ72YB5e8yT+TgwXgYI
+KwYBBQUHAQEEUjBQMCcGCCsGAQUFBzABhhtodHRwOi8vby5wa2kuZ29vZy9zL3dl
+MS9HclEwJQYIKwYBBQUHMAKGGWh0dHA6Ly9pLnBraS5nb29nL3dlMS5jcnQwMQYD
+VR0RBCowKIIRY2hpYXZlb3Jnb25pY2EuaXSCEyouY2hpYXZlb3Jnb25pY2EuaXQw
+EwYDVR0gBAwwCjAIBgZngQwBAgEwNgYDVR0fBC8wLTAroCmgJ4YlaHR0cDovL2Mu
+cGtpLmdvb2cvd2UxL2YzZXdDa1FWTXlJLmNybDCCAQMGCisGAQQB1nkCBAIEgfQE
+gfEA7wB1AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABktPybksA
+AAQDAEYwRAIgcCduyW/MgadRbVg3+QRShgkBtq5fFdDmQ1vvjFp5uk8CICQ0G+B7
+9VAKwsdoo3ODvbFQTnpEpsLOHo+Lyk7B7W15AHYAE0rfGrWYQgl4DG/vTHqRpBa3
+I0nOWFdq367ap8Kr4CIAAAGS0/Ju3wAABAMARzBFAiEA6NZTRHhHcP94TapgAmrc
+umLJwS/yRALfVSoF8ke6NxACIAere3acquOpj6W/chMgpR5LC0MEbHmYRh4I/ouX
+3OtqMAoGCCqGSM49BAMCA0kAMEYCIQCxsnRO/7Gkc3ZglbdaOx//QmwzM1LsiiAu
+vqwUA2CDnwIhAM25KO6OiJdhdCR8DEGohuiYP8cGSwNEVxsLPfLj+HuC
+-----END CERTIFICATE-----
+subject=CN=chiaveorgonica.it
+issuer=C=US, O=Google Trust Services, CN=WE1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2841 bytes and written 408 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+chiaveorgonica.it => 162517465
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=IT, ST=Bergamo, L=Ponte San Pietro, O=Aruba S.p.A., CN=webx.aruba.it
+   i:C=IT, ST=Bergamo, L=Ponte San Pietro, O=Actalis S.p.A., CN=Actalis Organization Validated Server CA G3
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Jul 27 15:50:30 2024 GMT; NotAfter: Jul 27 15:50:30 2025 GMT
+ 1 s:C=IT, ST=Bergamo, L=Ponte San Pietro, O=Actalis S.p.A., CN=Actalis Organization Validated Server CA G3
+   i:C=IT, L=Milan, O=Actalis S.p.A./03358520967, CN=Actalis Authentication Root CA
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Jul  6 07:20:55 2020 GMT; NotAfter: Sep 22 11:22:02 2030 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIHtzCCBZ+gAwIBAgIQG2TH0ZpcUvoIK2tBDt/INjANBgkqhkiG9w0BAQsFADCB
+iTELMAkGA1UEBhMCSVQxEDAOBgNVBAgMB0JlcmdhbW8xGTAXBgNVBAcMEFBvbnRl
+IFNhbiBQaWV0cm8xFzAVBgNVBAoMDkFjdGFsaXMgUy5wLkEuMTQwMgYDVQQDDCtB
+Y3RhbGlzIE9yZ2FuaXphdGlvbiBWYWxpZGF0ZWQgU2VydmVyIENBIEczMB4XDTI0
+MDcyNzE1NTAzMFoXDTI1MDcyNzE1NTAzMFowaTELMAkGA1UEBhMCSVQxEDAOBgNV
+BAgMB0JlcmdhbW8xGTAXBgNVBAcMEFBvbnRlIFNhbiBQaWV0cm8xFTATBgNVBAoM
+DEFydWJhIFMucC5BLjEWMBQGA1UEAwwNd2VieC5hcnViYS5pdDCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAMDqCP/ABvDiCTJZBKXTAuTwCdexuUx/KTaV
+JTjRd0G5KfWBxCJuJtFNDJOEVnVmBrFF7l4R79AT2LZK2de1dwMtvpqylgNfuxBx
+/ymzU00kidI8bA+iJO6sNHodiuj2/49KwBdieBk7vicDI/mYrUhPaCIzeKin+dyq
+pBj7cE2uzYp2dtuaJUE074PaxunqtNKY7cld4Kw3n5CPSQgDEPJMpDGwijQYE9F/
+6FX/xDG3iU0GNBPrMCFQD76s84vHr/OcX7TW5l3NKcS3SkcjGLMVHpcIElgA0h+j
+Pz/5+AfMkjU/ttWw16RSNPf35JbDaZZEjr34jFZkbcLF0QC0eP8CAwEAAaOCAzgw
+ggM0MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUn4qxtfGx3oL0J3y+iM3eqUOB
+o0swfgYIKwYBBQUHAQEEcjBwMDsGCCsGAQUFBzAChi9odHRwOi8vY2FjZXJ0LmFj
+dGFsaXMuaXQvY2VydHMvYWN0YWxpcy1hdXRob3ZnMzAxBggrBgEFBQcwAYYlaHR0
+cDovL29jc3AwOS5hY3RhbGlzLml0L1ZBL0FVVEhPVi1HMzAYBgNVHREEETAPgg13
+ZWJ4LmFydWJhLml0MFEGA1UdIARKMEgwPAYGK4EfARQBMDIwMAYIKwYBBQUHAgEW
+JGh0dHBzOi8vd3d3LmFjdGFsaXMuaXQvYXJlYS1kb3dubG9hZDAIBgZngQwBAgIw
+HQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMEgGA1UdHwRBMD8wPaA7oDmG
+N2h0dHA6Ly9jcmwwOS5hY3RhbGlzLml0L1JlcG9zaXRvcnkvQVVUSE9WLUczL2dl
+dExhc3RDUkwwHQYDVR0OBBYEFDcNhlLtJwG90KVIOln1GwscryHiMA4GA1UdDwEB
+/wQEAwIFoDCCAXwGCisGAQQB1nkCBAIEggFsBIIBaAFmAHYA5tIxY0B3jMEQQQbX
+cbnOwdJA9paEhvu6hzId/R43jlAAAAGQ9OwVXgAABAMARzBFAiBicNzOy0GmmUNC
+KRFk/V9tb44vLzEIGB5rxzkruQqphQIhAIrdU1uR/rbiX7ZHnK8I805LHEETDQVC
+Lrc83l08QeQXAHUAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WGJjoAAAGQ
+9OwVWQAABAMARjBEAiBbOK0F1oAX9gWXMiS0NO5mVvRJ8kpgIq4l/VKeiOuk5QIg
+Ba0jOfuhiH3WYyObLa475PKAy3/dDJBECbM7nKNjSqcAdQDd3Mo0ldfhFgXnlTL6
+x5/4PRxQ39sAOhQSdgosrLvIKgAAAZD07BV2AAAEAwBGMEQCIGK3RN7em0ThJ1s4
+2lkT71zwiaXXPJJEEeEJk9Om36f4AiBKJmf+RBGH/aXLAiw6vwQh1LnbiwBYUnNu
+fWLzwJxYejANBgkqhkiG9w0BAQsFAAOCAgEAJSGrv/nQfJxNgyjEXSmv+QhV9U4j
+COMMwzmOxhffsflIuqeCpLFfvDByps2v9G6yjFHdvdxrbjUGbh/S4DTYBrc4JfDj
+p3rSQM3h0Ba6bThGjPlhJmSNmCnL49cqMAmVcOTnjF9NK0QtQ45JUAroRs08Y50Y
+/dXJvAAntlL5cDA+piGG+7Q1pfTXuPNK5c2K9HwSrT+0ygXMRqGZOCnjMKlg10kb
+had8hGadikxs+2QRcy1ScHlxU/TZJ0ZI9sBtjJgWCvaRTMRQnXOxZnrOC8teYO3U
+gEyJygd7YlF64mF9IUboep4TNyT1Dj/8lpeKeeELTWqqmMx+hArDXyydRhYplrF/
+RdLJ16WBcpXYWF/w6vUOE87MFBxuN2Q+dwLz+Jxv2GYg6AH1Kbf7WTAjgUZzppr8
+b1nhW4WtBpeyMrVEVIHq1vAKBTdcFJDHe5lhJVtiqCmTtCI4Nv7kmC8ouzCae7hs
+Ufx4dyf3S2yeJ4W0I5RhEOS6wkUgoqcXZ3tRfIxwlraBa6zTkzj5wDI3xRtaA3Y2
+tKTFbzRAGgb6XgYm2JsVRV6E/9a640KI6n6yr/Fs84oOPWB8XTp5XXWt35HkgCY2
+hDkb0AoqhJF20nNMd/4hRhDP95hy80lpl//3hS/LuNJixjNu8s8ZD7+us/z2Xnnt
+vqkRMq6/1KjahNk=
+-----END CERTIFICATE-----
+subject=C=IT, ST=Bergamo, L=Ponte San Pietro, O=Aruba S.p.A., CN=webx.aruba.it
+issuer=C=IT, ST=Bergamo, L=Ponte San Pietro, O=Actalis S.p.A., CN=Actalis Organization Validated Server CA G3
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4457 bytes and written 417 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+diocesiportosantarufina.it => 141360897
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=KR, ST=Seoul, L=Geumcheon-gu, O=CHUNJAE TEXTBOOK CO.,LTD., CN=*.hbedu.co.kr
+   i:C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Dec 20 04:31:02 2024 GMT; NotAfter: Jan 21 04:31:01 2026 GMT
+ 1 s:C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018
+   i:OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 21 00:00:00 2018 GMT; NotAfter: Nov 21 00:00:00 2028 GMT
+ 2 s:OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign
+   i:OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 18 10:00:00 2009 GMT; NotAfter: Mar 18 10:00:00 2029 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGWzCCBUOgAwIBAgIMMWao+5eqQV6qZ7l7MA0GCSqGSIb3DQEBCwUAMFAxCzAJ
+BgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSYwJAYDVQQDEx1H
+bG9iYWxTaWduIFJTQSBPViBTU0wgQ0EgMjAxODAeFw0yNDEyMjAwNDMxMDJaFw0y
+NjAxMjEwNDMxMDFaMHAxCzAJBgNVBAYTAktSMQ4wDAYDVQQIEwVTZW91bDEVMBMG
+A1UEBxMMR2V1bWNoZW9uLWd1MSIwIAYDVQQKExlDSFVOSkFFIFRFWFRCT09LIENP
+LixMVEQuMRYwFAYDVQQDDA0qLmhiZWR1LmNvLmtyMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAuXehO1GnyMFJQIxj3IbOaMx1fetreXoeJaTSPnRmOfuL
+RdmUAbXe5C+anrnrZFTNIzyDc+3hrNPk7v8b7YgEmOzRVr5zyiEeRqbHkNWAB7/1
+UO9he0zE04TlmVnRXPSdC1N2CVMajHhqa8LCx+7F1rrAMgpoL/szc/hl2ReDTdCP
+X2gI+iSIkFs6cNaxSHNCJdOu4a90loIu/pDKo38LycxPgZTbbdXS9BOVReh+NeZo
+5HJj30N/tQFBNlL/Iru9/BOKPIn1QHwKLP7U0zmITXJaTg6k+lrQW92dXyUAIRLi
+1UQmN5PPxwtW0rhvzF89eu2cDSWqx4avGMVkc31jKwIDAQABo4IDEzCCAw8wDgYD
+VR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwgY4GCCsGAQUFBwEBBIGBMH8wRAYI
+KwYBBQUHMAKGOGh0dHA6Ly9zZWN1cmUuZ2xvYmFsc2lnbi5jb20vY2FjZXJ0L2dz
+cnNhb3Zzc2xjYTIwMTguY3J0MDcGCCsGAQUFBzABhitodHRwOi8vb2NzcC5nbG9i
+YWxzaWduLmNvbS9nc3JzYW92c3NsY2EyMDE4MFYGA1UdIARPME0wQQYJKwYBBAGg
+MgEUMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29tL3Jl
+cG9zaXRvcnkvMAgGBmeBDAECAjAlBgNVHREEHjAcgg0qLmhiZWR1LmNvLmtyggto
+YmVkdS5jby5rcjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHwYDVR0j
+BBgwFoAU+O9/8s14Z6jeb48kjYjxhwMCs+swHQYDVR0OBBYEFH7cyj1+JCOjiChG
+h0jmGgg2opJpMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgBkEcRspBLsp4kc
+ogIuALyrTygH1B41J6vq/tUDyX3N8AAAAZPiVVkCAAAEAwBHMEUCIQCAMJj7Od7a
+mD44R5cg1goZCjXO5HOuxtGgGPmQ4lQbsQIgb+vRXXkfzZTn04UUZ/YvmG9eiOqN
+CVGrjK/hO9xh8aIAdwBWbNWjdr6D3+NCtnXEnCMkmKdpusOCy6tJo4d9mrMtAQAA
+AZPiVVoyAAAEAwBIMEYCIQDXaNcJ6+jNBIzPY2l8AuHsmXci2D9+Ir9oZjWZt2Fv
+vAIhANQeb5Js08eiklAWq/caJbn0/Q/Nb3dvyQ996NjnhzOaAHUADleUvPOuqT4z
+GyyZB7P3kN+bwj1xMiXdIaklrGHFTiEAAAGT4lVadwAABAMARjBEAiBOhF47q4uf
+yUkSE+3oO4StDcW6i/qWWcsiQDI2xpszHAIgXX4w1vVCYhRX6yh7Dkqv767pd25e
+48gyJQnYvzKH7D8wDQYJKoZIhvcNAQELBQADggEBABjgCE/g6ONeV9D+Guhti0iK
+sspSbVgZAK2WEuzIPWyZXUjYXgZe5kcE5xwrMDJ/hlRC6UV4ECvj8peAbLrU/kUt
+YaUkRr5IUJrvyeRTgNE9iEH3ZXaAkw9554gLZbpsYT/w+qvz0CFs2ZUU/L/tWE+k
+KWEsL21UPqMPwAJfpSihQ+lcnq/QwTxQc6aAObps0hPIiBI+HzBw60aFEvpAFLn6
+Kcx+m/jtemc2uoFMJnsCFHdjL0r09uyNY9mrORCmR2ISavZLdgXISoeZdoRDp2Tj
+QL/fOU74YS/QmJlFLLPu32Gsjc2oNzrDx6Q5ba4lkJYl4SUlkApkYHn7B2RCBy4=
+-----END CERTIFICATE-----
+subject=C=KR, ST=Seoul, L=Geumcheon-gu, O=CHUNJAE TEXTBOOK CO.,LTD., CN=*.hbedu.co.kr
+issuer=C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4170 bytes and written 412 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+hwpviewer.hbedu.co.kr => 1636988593

@@ -1,0 +1,324 @@
+\documentclass{article}
+\title{Testing a TLS connection}
+\author{Fabio Massimo Ercoli
+	\footnote{
+		More on me:
+		\href{https://github.com/fax4ever}{my GitHub page} -
+		\href{https://www.linkedin.com/in/fabioercoli}{my Linkedin page}.
+}}
+\date{December 25\textsuperscript{th} 2024}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{color, colortbl}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+	
+\section{TLS handshake runs}
+
+I created the script file \emph{tls-checker.sh} to test the TLS handshakes
+on 20 different sites:
+
+\begin{verbatim}
+google.com, facebook.com, redhat.com, infinispan.org, almaviva.it, 
+www.eng.it, edenred.it, esa.int, theguardian.com, repubblica.it, 
+huffingtonpost.it, quotidianolavoce.it, baraondanews.it, 
+mit.edu, stanford.edu, uniroma1.it, unicusano.it, 
+chiaveorgonica.it, diocesiportosantarufina.it, hwpviewer.hbedu.co.kr
+\end{verbatim}
+
+\noindent The core of the script is the \emph{checkTLS} function:
+
+\begin{lstlisting}[language=bash]
+#!/usr/bin/env bash
+set -e
+openssl version
+
+function checkTLS() {
+	start=`date +%s%N`
+	echo | openssl s_client -connect $1:443 2>/dev/null
+	end=`date +%s%N`
+	runtime=$((end-start))
+	echo "$1 => $runtime"
+}
+
+checkTLS google.com
+checkTLS facebook.com
+...
+\end{lstlisting}
+
+\noindent I collected the output in a text file \emph{tls-checkers.txt}
+\begin{lstlisting}[language=bash]
+./tls-checker.sh > tls-checkers.txt
+\end{lstlisting}
+
+\section{TLS handshake times}
+
+From the previous result it is possible to extract the times, 
+they are collected as microseconds (1 microsecond = $10^{-9}$ seconds).
+
+\begin{lstlisting}[language=bash]
+cat tls-checkers.txt | grep "=>"
+cat tls-checkers.txt | grep "New, "
+\end{lstlisting}
+
+\noindent Here is my result:
+
+\bigbreak
+\begin{tabular}{ c c c c }
+\textbf{Connection} & \textbf{Time} & \textbf{TLSv} & \textbf{Cipher}  \\ 
+\hline
+google.com & 115.264.962 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+facebook.com & 066.053.836 & TLSv1.3 & TLS CHACHA20 POLY1305 SHA256 \\
+redhat.com & 568.495.098 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+infinispan.org & 097.765.850 & TLSv1.3 & TLS AES 128 GCM SHA256 \\
+almaviva.it & 216.864.263 & TLSv1.2 & ECDHE-RSA-AES128-GCM SHA256 \\
+www.eng.it & 109.731.688 & TLSv1.3 & TLS AES 128 GCM SHA256 \\
+edenred.it & 108.295.706 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+esa.int & 204.531.698 & TLSv1.2 & ECDHE-RSA-AES256-GCM SHA384 \\
+theguardian.com & 123.894.304 & TLSv1.3 & TLS AES 128 GCM SHA256 \\
+repubblica.it& 86.482.951 & TLSv1.3 & TLS AES 128 GCM SHA256 \\
+huffingtonpost.it & 269.442.781 & TLSv1.2 & ECDHE-ECDSA-AES128-GCM SHA256 \\
+quotidianolavoce.it & 661.609.322 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+baraondanews.it & 170.123.645 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+mit.edu & 1040.751.680 & TLSv1.2 & ECDHE-RSA-AES256-GCM SHA384 \\
+stanford.edu & 912.750.222 & TLSv1.2 & AES128-GCM SHA256 \\
+uniroma1.it & 137.912.714 & TLSv1.2 & ECDHE-RSA-AES256-GCM SHA384 \\
+unicusano.it & 081.213.441 & TLSv1.3 & TLS AES 128 GCM SHA256 \\
+chiaveorgonica.it & 162.517.465 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+diocesiportosantarufina.it & 141.360.897 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+hwpviewer.hbedu.co.kr & 1636.988.593 & TLSv1.3 & TLS AES 256 GCM SHA384 \\
+\end{tabular}
+\bigbreak
+
+\section{Describes two connections in detail}
+
+We analyze in more detail two connections: \emph{facebook.com} and \emph{redhat.com}.
+To have more information about the handshake process, we run the \emph{openssl c\_client}
+command passing the options: \emph{-trace -debug -state}.
+Moreover, we add the options \emph{-tls1\_3}
+to be sure of using TLS 1.3 (as requested), even if the higher protocol should be
+applied by default in the version negotiation phase.
+I collected the output in a text file \emph{tls-checkers-deep.txt},
+after than I split it into \emph{facebook.txt} and \emph{redhat.txt}.
+
+\subsection{ClientHello $\rightarrow$}
+
+At the beginning the client sends a \emph{ClientHello} message.
+There is a lot of information here:
+
+ \begin{itemize}
+ 	\item The protocol version \emph{TLS 1.2}, with extension indicating \emph{TLS 1.3}
+	\item A random value (28 bits), plus a timestamp \emph{gmt\_unix\_time} (4 bits)
+	\item A 32-bits session ID
+	\item The supported cipher suites by the client (in order of preference)
+	\item In the extensions we can find:
+		\subitem The name of the server
+		\subitem Supported version (in this case only 1.3 - since we used this option!)
+		\subitem Supported groups
+		\subitem Supported signature algorithms
+\end{itemize}
+
+\subsection{ServerHello $\leftarrow$}
+
+From the server we receive a \emph{ServerHello} message.
+In its payload we can find:
+
+ \begin{itemize}
+ 	\item The protocol version \emph{TLS 1.2}, with extension indicating \emph{TLS 1.3}
+	\item A new random value (28 bits), plus a timestamp \emph{gmt\_unix\_time} (4 bits)
+	\item A 32-bits session ID (the same of the client)
+	\item The chosen cipher suite: 
+		\subitem \emph{TLS\_AES\_256\_GCM\_SHA384} for Red Hat
+		\subitem \emph{TLS\_CHACHA20\_POLY1305\_SHA256} for Facebook
+	\item In the extensions we can find:
+		\subitem Chosen TLS version:  1.3
+		\subitem Chosen group: \emph{ecdh\_x25519}
+		\subitem The server ephemeral public key for the key exchange
+\end{itemize}
+
+\subsection{Other server messages $\leftarrow$}
+
+After that the server sends the \emph{EncryptedExtensions} and
+the \emph{Certificate} messages.
+We can see here the certificates containing the servers' public keys.
+
+For Red Hat, having x501 name:
+\begin{verbatim}
+	C = US, ST = North Carolina, L = Raleigh, O = "Red Hat, Inc.", CN = redhat.com
+\end{verbatim}
+
+It is signed by:
+
+\begin{verbatim}
+C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+\end{verbatim}
+
+For Facebook we have \emph{CompressedCertificate}
+in place of \emph{Certificate}, this probably allows it to speed up the handshake.
+The subject is:
+\begin{verbatim}
+subject=C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.facebook.com
+\end{verbatim}
+
+and the issuer is:
+
+\begin{verbatim}
+C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA
+\end{verbatim}
+
+The \emph{CertificateVerify} contains the chain of certificates to verify the certificate.
+
+\subsection{Final handshake}
+
+Both parties sends each other a \emph{Finished} message,
+containing the \emph{verify\_data} field used to verify and complete
+the handshake.
+
+The result of the handshake for RedHat is:
+
+\begin{verbatim}
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 4052 bytes and written 331 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 4096 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+\end{verbatim}
+
+The result of the handshake for Facebook is:
+
+\begin{verbatim}
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2449 bytes and written 317 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_CHACHA20_POLY1305_SHA256
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+\end{verbatim}
+
+We can noticed that the Facebook's server public key is much shorter,
+in general less data is needed and the handshake is faster.
+
+\section{Classify the results}
+
+I used \href{https://www.ssllabs.com/ssltest/}{SSL labs} to collect security
+results on the connections. The result can be clustered
+according to colors: green(A/A+), cyan(B - key ex), yellow(B - protocol), red(F), magenta(T):
+
+\bigbreak
+\begin{tabular}{ c c c c c c } 
+\textbf{Connection} & \textbf{Certificate} & \textbf{Protocol} & \textbf{KeyEx} & \textbf{Ciphers} & \textbf{Overall}  \\ 
+\hline
+\rowcolor{yellow}
+google.com & 100 & 70 & 90 & 90 & \textbf{B} \\
+\rowcolor{yellow}
+facebook.com & 100 & 70 & 90 & 90 & \textbf{B} \\
+\rowcolor{green}
+redhat.com & 100 & 100 & 90 & 90 & \textbf{A+} \\
+\rowcolor{green}
+infinispan.org & 100 & 100 & 90 & 90 & \textbf{A} \\
+\rowcolor{magenta}
+almaviva.it & 0 & 70 & 90 & 90 & \textbf{T} \\
+\rowcolor{green}
+www.eng.it & 100 & 100 & 90 & 90 &  \textbf{A+} \\
+\rowcolor{green}
+edenred.it & 100 & 100 & 90 & 90 &  \textbf{A} \\
+\rowcolor{green}
+esa.int & 100 & 100 & 90 & 90 &  \textbf{A} \\
+\rowcolor{green}
+theguardian.com & 100 & 100 & 90 & 90 &  \textbf{A+} \\
+\rowcolor{green}
+repubblica.it & 100 & 100 & 90 & 90 &  \textbf{A} \\
+\rowcolor{yellow}
+huffingtonpost.it & 100 & 70 & 90 & 90 &  \textbf{B} \\
+\rowcolor{green}
+quotidianolavoce.it & 100 & 100 & 90 & 90 &  \textbf{A} \\
+\rowcolor{yellow}
+baraondanews.it & 100 & 70 & 90 & 90 &  \textbf{B} \\ 
+\rowcolor{green}
+mit.edu & 100 & 100 & 90 & 90 &  \textbf{A} \\ 
+\rowcolor{cyan}
+stanford.edu & 100 & 100 & 70 & 90 &  \textbf{B} \\ 
+\rowcolor{green}
+uniroma1.it & 100 & 100 & 90 & 90 &  \textbf{A} \\ 
+\rowcolor{yellow}
+unicusano.it & 100 & 70 & 90 & 90 &  \textbf{B} \\ 
+\rowcolor{yellow}
+chiaveorgonica.it & 100 & 70 & 90 & 90 &  \textbf{B} \\
+\rowcolor{magenta}
+diocesiportosantarufina.it & 0 & 100 & 90 & 90 &  \textbf{T} \\
+\rowcolor{red}
+hwpviewer.hbedu.co.kr & 100 & 70 & 0 & 0 &  \textbf{F} \\
+\end{tabular}
+\bigbreak
+
+\subsection{A/A+ green connections}
+
+Those connections are good in every aspect. In particular the A+ ones have also a \emph{DNS Certification Authority Authorization (CAA) Policy} and \emph{HTTP Strict Transport Security (HSTS)} defined.
+I collected the output in a text file \emph{tls-checkers-deep.txt}
+
+\subsection{B yellow connections}
+
+Those connections are good on certificate, key exchange and ciphers, while  
+the protocol can be improved on the protocol side.
+The reason is that those connections support also TLS 1.1 and 1.0
+that are now considered weak.
+According to the tool, even if those versions can be used, the
+downgrade attack prevention in place.
+The reason probably is not a lack of skills of the provider of those
+services, but the strategic choice of support a wider range
+of clients.
+
+\subsection{B cyan connection}
+
+In this case certificate, protocol and ciphers are good, while the key exchange process
+of the TLS handshake can be improved since the server supports the Forward Secrecy
+only for a few browsers.
+
+\subsection{F red connection}
+
+This is the case of the connection \emph{hwpviewer.hbedu.co.kr},
+as the name suggested it is probably not a production portal.
+It is nice to analyze it, since we can found very deep vulnerabilities
+on the key exchange process and on ciphers used.
+
+\subsection{T magenta connections}
+
+The problem of those connections is the fact that
+the server certificates have been expired.
+This is not always true in all cases.
+From instance in the case of Almamiva portal
+the certificate is no longer valid only if the
+connection is served by the \emph{*.awsglobalaccelerator.com}
+host. The \emph{Valid until} certificate field contains the value:
+
+\begin{verbatim}
+Fri, 15 Nov 2024 23:59:59 UTC (expired 1 month and 8 days ago)   
+EXPIRED
+\end{verbatim}
+
+\noindent In this case the score for the certificate is of course 0.
+
+\end{document}		
